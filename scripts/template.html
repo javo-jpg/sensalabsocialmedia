@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sensa Lab Parrilla</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f3ef;--card:#fff;--ink:#111;--mute:#6b6b6b;--line:#e3e1da;--acc:#3b2bff;--ok:#0f8a4b;--ch:#c2410c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0c0e;--card:#16161a;--ink:#f2f2f2;--mute:#9a9aa3;--line:#2a2a31;--acc:#8b80ff;--ok:#34d399;--ch:#fb923c}}
+:root[data-theme="dark"]{--bg:#0c0c0e;--card:#16161a;--ink:#f2f2f2;--mute:#9a9aa3;--line:#2a2a31;--acc:#8b80ff;--ok:#34d399;--ch:#fb923c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 16px 140px}
+h1{font-size:clamp(28px,5vw,48px);margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:0 0 28px;max-width:70ch;line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.card.ok{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.card.ch{border-color:var(--ch);box-shadow:0 0 0 1px var(--ch)}
+header{display:flex;gap:12px;align-items:flex-start}.num{font-family:"JetBrains Mono",monospace;color:var(--acc);font-size:14px;padding-top:3px}
+.date{font-size:13px;color:var(--mute)}h2{margin:2px 0 0;font-size:20px;line-height:1.2}
+.meta{display:flex;flex-wrap:wrap;gap:6px}.meta span{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 9px;color:var(--mute)}.meta .fmt{color:var(--ink)}
+.strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip img{height:200px;width:auto;min-width:120px;border-radius:8px;background:var(--line);display:block;object-fit:cover}
+.strip img.story{height:160px}.lbl{font-size:12px;color:var(--mute)}
+.copy{white-space:pre-wrap;font-family:inherit;font-size:15px;line-height:1.5;margin:0}
+.tags{color:var(--acc);font-size:13px;margin:0}.note{font-size:13px;color:var(--mute);margin:0;border-left:2px solid var(--line);padding-left:8px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.actions button{font:inherit;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:7px 14px;cursor:pointer}
+.actions input{flex:1;min-width:140px;font:inherit;font-size:14px;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+.card.ok .ok{background:var(--ok);color:#fff;border-color:var(--ok)}.card.ch .ch{background:var(--ch);color:#fff;border-color:var(--ch)}
+.back{margin-top:36px;color:var(--mute)}.back li{margin:4px 0}.back a{color:var(--acc)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+.bar button{font:inherit;background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;cursor:pointer}.bar span{color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Sensa Lab · Parrilla 30 oct – 27 nov</h1>
+<p class="sub">{{N}} posts para IG, FB y LinkedIn, los lunes, miércoles y viernes. Los diseños son de Audrey y los copies están reescritos. El primero sale hoy a las 16:00 CDMX. Marca cada post y copia el resumen al chat; también basta con responder “aprobado todo”. Las imágenes abren en Drive.</p>
+<div class="grid">
+{{CARDS}}
+</div>
+<div class="back"><h3>Backlog sin fecha (piezas LinkedIn de Audrey)</h3><ul>{{BACKLOG}}</ul></div>
+</div>
+<div class="bar"><span id="cnt">0 aprobados · 0 con cambios</span><button id="all">Aprobar todo</button><button id="copy">Copiar resumen</button></div>
+<script>
+const K='sensa-review-v1';let st={};try{st=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}};
+const cards=[...document.querySelectorAll('.card')];
+function paint(){let o=0,c=0;cards.forEach(el=>{const s=st[el.dataset.id]||{};el.classList.toggle('ok',s.v==='ok');el.classList.toggle('ch',s.v==='ch');if(s.v==='ok')o++;if(s.v==='ch')c++;const i=el.querySelector('input');if(document.activeElement!==i)i.value=s.n||''});document.getElementById('cnt').textContent=o+' aprobados · '+c+' con cambios'}
+cards.forEach(el=>{const id=el.dataset.id;el.querySelectorAll('button').forEach(b=>b.onclick=()=>{st[id]=st[id]||{};st[id].v=st[id].v===b.dataset.v?null:b.dataset.v;save();paint()});el.querySelector('input').oninput=e=>{st[id]=st[id]||{};st[id].n=e.target.value;save()}});
+document.getElementById('all').onclick=()=>{cards.forEach(el=>{st[el.dataset.id]=Object.assign(st[el.dataset.id]||{},{v:'ok'})});save();paint()};
+document.getElementById('copy').onclick=async()=>{const ok=[],ch=[];cards.forEach(el=>{const s=st[el.dataset.id]||{};if(s.v==='ok')ok.push(el.dataset.id);if(s.v==='ch')ch.push(el.dataset.id+(s.n?' ('+s.n+')':''))});const t='Aprobados: '+(ok.join(', ')||'—')+'\nCambios: '+(ch.join('; ')||'—');try{await navigator.clipboard.writeText(t);document.getElementById('copy').textContent='Copiado ✓'}catch(e){prompt('Copia esto:',t)}setTimeout(()=>document.getElementById('copy').textContent='Copiar resumen',1500)};
+paint();
+</script>
+</body>
+</html>

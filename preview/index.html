@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sensa Lab Parrilla</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f3ef;--card:#fff;--ink:#111;--mute:#6b6b6b;--line:#e3e1da;--acc:#3b2bff;--ok:#0f8a4b;--ch:#c2410c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0c0e;--card:#16161a;--ink:#f2f2f2;--mute:#9a9aa3;--line:#2a2a31;--acc:#8b80ff;--ok:#34d399;--ch:#fb923c}}
+:root[data-theme="dark"]{--bg:#0c0c0e;--card:#16161a;--ink:#f2f2f2;--mute:#9a9aa3;--line:#2a2a31;--acc:#8b80ff;--ok:#34d399;--ch:#fb923c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 16px 140px}
+h1{font-size:clamp(28px,5vw,48px);margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:0 0 28px;max-width:70ch;line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.card.ok{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.card.ch{border-color:var(--ch);box-shadow:0 0 0 1px var(--ch)}
+header{display:flex;gap:12px;align-items:flex-start}.num{font-family:"JetBrains Mono",monospace;color:var(--acc);font-size:14px;padding-top:3px}
+.date{font-size:13px;color:var(--mute)}h2{margin:2px 0 0;font-size:20px;line-height:1.2}
+.meta{display:flex;flex-wrap:wrap;gap:6px}.meta span{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 9px;color:var(--mute)}.meta .fmt{color:var(--ink)}
+.strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip img{height:200px;width:auto;min-width:120px;border-radius:8px;background:var(--line);display:block;object-fit:cover}
+.strip img.story{height:160px}.lbl{font-size:12px;color:var(--mute)}
+.copy{white-space:pre-wrap;font-family:inherit;font-size:15px;line-height:1.5;margin:0}
+.tags{color:var(--acc);font-size:13px;margin:0}.note{font-size:13px;color:var(--mute);margin:0;border-left:2px solid var(--line);padding-left:8px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.actions button{font:inherit;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:7px 14px;cursor:pointer}
+.actions input{flex:1;min-width:140px;font:inherit;font-size:14px;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+.card.ok .ok{background:var(--ok);color:#fff;border-color:var(--ok)}.card.ch .ch{background:var(--ch);color:#fff;border-color:var(--ch)}
+.back{margin-top:36px;color:var(--mute)}.back li{margin:4px 0}.back a{color:var(--acc)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+.bar button{font:inherit;background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;cursor:pointer}.bar span{color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Sensa Lab · Parrilla 30 oct – 27 nov</h1>
+<p class="sub">13 posts para IG, FB y LinkedIn, los lunes, miércoles y viernes. Los diseños son de Audrey y los copies están reescritos. El primero sale hoy a las 16:00 CDMX. Marca cada post y copia el resumen al chat; también basta con responder “aprobado todo”. Las imágenes abren en Drive.</p>
+<div class="grid">
+<article class="card" data-id="01">
+<header><span class="num">01</span><div><div class="date">Vie 30 oct · 16:00 CDMX</div><h2>Not a studio. A lab.</h2></div></header>
+<div class="meta"><span class="fmt">Post + Story</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1KeOokr198UkOO-kvubK_iZeaB6ucqzXT/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1KeOokr198UkOO-kvubK_iZeaB6ucqzXT&sz=w800" alt="Not a studio. A lab. 1"></a></div><div class="lbl">Stories</div><div class="strip"><a href="https://drive.google.com/file/d/1veh5CfcouIt-ced994m0NWsWtvIoX7nt/view" target="_blank" rel="noopener"><img loading="lazy" class="story" src="https://drive.google.com/thumbnail?id=1veh5CfcouIt-ced994m0NWsWtvIoX7nt&sz=w800" alt="story"></a><a href="https://drive.google.com/file/d/11P1W7KT0Bxej6cDzY7rOIcV7L6o5afM_/view" target="_blank" rel="noopener"><img loading="lazy" class="story" src="https://drive.google.com/thumbnail?id=11P1W7KT0Bxej6cDzY7rOIcV7L6o5afM_&sz=w800" alt="story"></a></div>
+<pre class="copy">A studio executes the idea you already have.
+A lab goes looking for the one nobody has tried yet.
+
+We&#x27;re Sensa Lab. We build interactive experiences for brands: AI mirrors, arcade-style games, sensor-driven installations, things people walk up to and actually touch.
+
+New website is live. Take a look at what we&#x27;ve been building → sensalab.io</pre><p class="tags">#CreativeTechnology #ExperientialMarketing #InteractiveExperiences #EventTech #SensaLab</p><p class="note">Relanzamiento. Story 1: arte &#x27;a Lab&#x27;. Story 2: &#x27;Visit our website&#x27; con link sticker.</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="02">
+<header><span class="num">02</span><div><div class="date">Lun 2 nov · 11:00 CDMX</div><h2>Based in LA. Global by design.</h2></div></header>
+<div class="meta"><span class="fmt">Post estático</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/13UwjaE12fn_H2RXW3s03gmS5i_RwDB8U/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=13UwjaE12fn_H2RXW3s03gmS5i_RwDB8U&sz=w800" alt="Based in LA. Global by design. 1"></a></div>
+<pre class="copy">Home base: Los Angeles.
+Team and partners: Mexico City, Miami and wherever the project lands.
+
+Our last AI commercial was built by a crew in Russia for a brand launching in Brazil. That&#x27;s pretty normal for us. Time zones are a scheduling problem, not a creative one.
+
+If you&#x27;re an agency or brand with an activation coming up, we&#x27;d like to hear about it.</pre><p class="tags">#LosAngeles #CreativeTech #BrandActivation #ExperientialAgency #SensaLabLA</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="03">
+<header><span class="num">03</span><div><div class="date">Mié 4 nov · 11:00 CDMX</div><h2>Not all interactive experiences share the same goal</h2></div></header>
+<div class="meta"><span class="fmt">Carrusel (5)</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1ggL9_llGWwkKGW15LRcAADrcWO7b9aZI/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1ggL9_llGWwkKGW15LRcAADrcWO7b9aZI&sz=w800" alt="Not all interactive experiences share the same goal 1"></a><a href="https://drive.google.com/file/d/1xYTbo_FoiTd3HaZLZwmoMysPw6hzAUJW/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1xYTbo_FoiTd3HaZLZwmoMysPw6hzAUJW&sz=w800" alt="Not all interactive experiences share the same goal 2"></a><a href="https://drive.google.com/file/d/1osASGq3SkXk7jjVswU_O_nXTtwg-LUE2/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1osASGq3SkXk7jjVswU_O_nXTtwg-LUE2&sz=w800" alt="Not all interactive experiences share the same goal 3"></a><a href="https://drive.google.com/file/d/1f-l7d902MFRTB31twVgOEbKq-nwHgX_z/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1f-l7d902MFRTB31twVgOEbKq-nwHgX_z&sz=w800" alt="Not all interactive experiences share the same goal 4"></a><a href="https://drive.google.com/file/d/1lLwNMzVYIJ0MqvAyjI3SwU0uSj12mNus/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1lLwNMzVYIJ0MqvAyjI3SwU0uSj12mNus&sz=w800" alt="Not all interactive experiences share the same goal 5"></a></div>
+<pre class="copy">Before picking the tech, pick the job.
+
+The Simulator lets people try the product before they buy it.
+The Collector trades a fun moment for real lead data.
+The Advocate turns guests into the ones posting about your brand.
+
+Same screen, same sensors, totally different build depending on the KPI. Which one is your next event?</pre><p class="tags">#EventStrategy #ExperientialMarketing #EventROI #BrandActivations #LeadGeneration</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="04">
+<header><span class="num">04</span><div><div class="date">Vie 6 nov · 11:00 CDMX</div><h2>Avatars that perform</h2></div></header>
+<div class="meta"><span class="fmt">Carrusel (2)</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1KZTBuZ5E3p2JoF0QJYCCr7oPTc05AbJk/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1KZTBuZ5E3p2JoF0QJYCCr7oPTc05AbJk&sz=w800" alt="Avatars that perform 1"></a><a href="https://drive.google.com/file/d/1BGTd5Yaom7VONxIuha9D9CM9dHbnciDN/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1BGTd5Yaom7VONxIuha9D9CM9dHbnciDN&sz=w800" alt="Avatars that perform 2"></a></div>
+<pre class="copy">Digital avatars that talk back, react to the crowd and stay in character for an eight-hour show day.
+
+We build the real-time pipeline behind them: motion capture, voice, rendering and the logic that keeps it from breaking when 300 people show up at once.</pre><p class="tags">#DigitalAvatars #MotionCapture #RealTime #TradeShowTech #SensaLab</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="05">
+<header><span class="num">05</span><div><div class="date">Lun 9 nov · 11:00 CDMX</div><h2>Top AI experiential booths</h2></div></header>
+<div class="meta"><span class="fmt">Carrusel (7)</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1WXG4E6f_a6INkLimEpE9AH_WlhQsFB6l/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1WXG4E6f_a6INkLimEpE9AH_WlhQsFB6l&sz=w800" alt="Top AI experiential booths 1"></a><a href="https://drive.google.com/file/d/1Icg2X109dAWHFC76yJ-pYm_HgdSjTPLm/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1Icg2X109dAWHFC76yJ-pYm_HgdSjTPLm&sz=w800" alt="Top AI experiential booths 2"></a><a href="https://drive.google.com/file/d/1rkt7YwTD6zMvE9qeixquwzAQxlLnhNOX/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1rkt7YwTD6zMvE9qeixquwzAQxlLnhNOX&sz=w800" alt="Top AI experiential booths 3"></a><a href="https://drive.google.com/file/d/1phV7k5s5LjeiLMzlsbU78tlUrn2fkxd3/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1phV7k5s5LjeiLMzlsbU78tlUrn2fkxd3&sz=w800" alt="Top AI experiential booths 4"></a><a href="https://drive.google.com/file/d/1OBj7fwZhZ1W3gbtAUQ-qLOSk8frLw82o/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1OBj7fwZhZ1W3gbtAUQ-qLOSk8frLw82o&sz=w800" alt="Top AI experiential booths 5"></a><a href="https://drive.google.com/file/d/1G-hG6S0z3Lz9CfFEbcGI_X7pIxFLDhFg/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1G-hG6S0z3Lz9CfFEbcGI_X7pIxFLDhFg&sz=w800" alt="Top AI experiential booths 6"></a><a href="https://drive.google.com/file/d/1A9-RAChuFFNoWy06T2PZoc7kVxStaXSG/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1A9-RAChuFFNoWy06T2PZoc7kVxStaXSG&sz=w800" alt="Top AI experiential booths 7"></a></div>
+<pre class="copy">Three AI booths we keep coming back to:
+
+Intel at CES made data processing something you could see happen in front of you.
+Salesforce at Dreamforce turned attendee data into AI trading cards people actually kept.
+Vonage told its cloud story through an interactive hero you got to play.
+
+The common thread: none of them explained the product. They let you use it. Swipe for the breakdown.</pre><p class="tags">#AI #CES #Dreamforce #EventTech #ExperientialAI</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="06">
+<header><span class="num">06</span><div><div class="date">Mié 11 nov · 11:00 CDMX</div><h2>Perception vs. Reality</h2></div></header>
+<div class="meta"><span class="fmt">Post estático</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1FmTxuFvgFLUKpdT07gB2KyXvn7r93fHF/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1FmTxuFvgFLUKpdT07gB2KyXvn7r93fHF&sz=w800" alt="Perception vs. Reality 1"></a></div>
+<pre class="copy">What people think: interactive tech is fragile and something will crash in front of the client.
+
+What actually happens when it&#x27;s built right: it runs all day, the queue keeps growing and nobody thinks about the tech at all.
+
+Most of our work is the boring part nobody sees. Testing, backups, a plan B for the Wi-Fi.</pre><p class="tags">#EventProfs #CreativeTechnology #TechProduction #ExperientialDesign</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="07">
+<header><span class="num">07</span><div><div class="date">Vie 13 nov · 11:00 CDMX</div><h2>What is white label?</h2></div></header>
+<div class="meta"><span class="fmt">Story + LinkedIn</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1CeBGXpiSMiCT2S91aNLKl6NnUyZgx7vE/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1CeBGXpiSMiCT2S91aNLKl6NnUyZgx7vE&sz=w800" alt="What is white label? 1"></a></div>
+<pre class="copy">For agencies: you sell the experience, we build it.
+
+We work white label with experiential agencies in the US and Mexico. Development, real-time logic, hardware and on-site tech, all under your brand. Your client never has to know we exist (unless you want to brag about us).
+
+DMs are open.</pre><p class="tags">#WhiteLabel #AgencyPartner #ExperientialMarketing #EventTech #B2B</p><p class="note">Arte vertical: IG/FB como Story; LinkedIn como post.</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="08">
+<header><span class="num">08</span><div><div class="date">Lun 16 nov · 11:00 CDMX</div><h2>Why traditional marketing isn&#x27;t working anymore</h2></div></header>
+<div class="meta"><span class="fmt">Post estático</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1-WM8vtrYEmKHCR9OLmgeKBxj1V7tRcfZ/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-WM8vtrYEmKHCR9OLmgeKBxj1V7tRcfZ&sz=w800" alt="Why traditional marketing isn&#x27;t working anymore 1"></a></div>
+<pre class="copy">Walk any expo floor and count the booths with a banner, a looping video and someone handing out pens.
+
+Now count the ones with a line.
+
+People don&#x27;t remember what a brand told them. They remember what they did there. That&#x27;s the whole case for experiential.</pre><p class="tags">#ExperientialMarketing #EventStrategy #B2BMarketing #BrandExperience</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="09">
+<header><span class="num">09</span><div><div class="date">Mié 18 nov · 11:00 CDMX</div><h2>The brands you remember don&#x27;t just advertise</h2></div></header>
+<div class="meta"><span class="fmt">Carrusel (3) + Story Step Inside</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/19YrIkX0THY0IIuZc-7o7QepcwHN2w1p6/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=19YrIkX0THY0IIuZc-7o7QepcwHN2w1p6&sz=w800" alt="The brands you remember don&#x27;t just advertise 1"></a><a href="https://drive.google.com/file/d/1WSQwhI0sXrr0fEWTNuOjkASq0Psk1CiC/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1WSQwhI0sXrr0fEWTNuOjkASq0Psk1CiC&sz=w800" alt="The brands you remember don&#x27;t just advertise 2"></a><a href="https://drive.google.com/file/d/1SS0Zvbqx7zOk5NC0wz8hjQHg-uCHpEN2/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1SS0Zvbqx7zOk5NC0wz8hjQHg-uCHpEN2&sz=w800" alt="The brands you remember don&#x27;t just advertise 3"></a></div><div class="lbl">Stories</div><div class="strip"><a href="https://drive.google.com/file/d/1DpRXn0CKEpEznnMStiQ_uKqsBRQFJkRe/view" target="_blank" rel="noopener"><img loading="lazy" class="story" src="https://drive.google.com/thumbnail?id=1DpRXn0CKEpEznnMStiQ_uKqsBRQFJkRe&sz=w800" alt="story"></a></div>
+<pre class="copy">Nike x SNIPES in Brooklyn: a photo booth that turned every visitor into a content creator.
+Adidas &#x27;Faster Than&#x27;: treadmills in-store, real-time metrics, the product proving itself.
+Adidas in Dubai: a billboard you could literally swim in.
+
+None of these were about budget. They were about giving people something to do. Which one would you have stood in line for?</pre><p class="tags">#BrandActivation #ExperientialMarketing #Nike #Adidas #CreativeTechnology</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="10">
+<header><span class="num">10</span><div><div class="date">Vie 20 nov · 11:00 CDMX</div><h2>Get the playbook</h2></div></header>
+<div class="meta"><span class="fmt">Story + LinkedIn</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1sTi8wK2KP0j-4cw9uM3e3KTS1LsBStXQ/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1sTi8wK2KP0j-4cw9uM3e3KTS1LsBStXQ&sz=w800" alt="Get the playbook 1"></a></div>
+<pre class="copy">Turn attendees into players.
+
+A touch game, a leaderboard or a sensor floor gives people a reason to stay at your booth longer, and every round is a lead you can follow up with.
+
+We&#x27;ve packaged our favorite game mechanics into ready-to-brand experiences. Ask us for the playbook.</pre><p class="tags">#Gamification #LeadGeneration #TradeShowMarketing #InteractiveGames</p><p class="note">Arte vertical: IG/FB como Story; LinkedIn como post.</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="11">
+<header><span class="num">11</span><div><div class="date">Lun 23 nov · 11:00 CDMX</div><h2>Your booth: boring vs. noteworthy</h2></div></header>
+<div class="meta"><span class="fmt">Carrusel (5)</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/14H4knetR-f51wdZqsf281FbmAnh4yW7p/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=14H4knetR-f51wdZqsf281FbmAnh4yW7p&sz=w800" alt="Your booth: boring vs. noteworthy 1"></a><a href="https://drive.google.com/file/d/136S68-4gGGnw4ljKly1bM6Y07yFPbwxI/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=136S68-4gGGnw4ljKly1bM6Y07yFPbwxI&sz=w800" alt="Your booth: boring vs. noteworthy 2"></a><a href="https://drive.google.com/file/d/1X1YSGm8G7HswgTgo_4cZTw_rsWAU1tyW/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1X1YSGm8G7HswgTgo_4cZTw_rsWAU1tyW&sz=w800" alt="Your booth: boring vs. noteworthy 3"></a><a href="https://drive.google.com/file/d/10Ojfh6BTAqn9aS6XQcb4UajY8X9srxuR/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=10Ojfh6BTAqn9aS6XQcb4UajY8X9srxuR&sz=w800" alt="Your booth: boring vs. noteworthy 4"></a><a href="https://drive.google.com/file/d/1uo7IBU4jwBAJKNdAOhZvF1NyTGWv00J2/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1uo7IBU4jwBAJKNdAOhZvF1NyTGWv00J2&sz=w800" alt="Your booth: boring vs. noteworthy 5"></a></div>
+<pre class="copy">Same square footage, same budget, very different result.
+
+Swipe to see the small changes that take a booth from &#x27;walk past&#x27; to &#x27;wait, what is that?&#x27;</pre><p class="tags">#TradeShow #BoothDesign #EventTech #ExperientialDesign</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="12">
+<header><span class="num">12</span><div><div class="date">Mié 25 nov · 11:00 CDMX</div><h2>Is your activation just for decoration?</h2></div></header>
+<div class="meta"><span class="fmt">Post estático</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1XIRPaB8oFdYEQ2QHZMte2dJoQT0B0kwu/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1XIRPaB8oFdYEQ2QHZMte2dJoQT0B0kwu&sz=w800" alt="Is your activation just for decoration? 1"></a></div>
+<pre class="copy">If it looks great in photos but nobody touches it, it&#x27;s decoration.
+
+An activation should do a job: capture leads, explain the product, get people posting. If you can&#x27;t name the job, the build isn&#x27;t done yet.</pre><p class="tags">#BrandActivation #EventROI #ExperientialMarketing #CreativeTech</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+<article class="card" data-id="13">
+<header><span class="num">13</span><div><div class="date">Vie 27 nov · 11:00 CDMX</div><h2>The most visited booth is the most interactive</h2></div></header>
+<div class="meta"><span class="fmt">Carrusel (4)</span><span class="net">instagram</span><span class="net">facebook</span><span class="net">linkedin</span></div>
+<div class="strip"><a href="https://drive.google.com/file/d/1sSi-H-9DpMIscLg8dZeZtUs7bxT9Yyru/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1sSi-H-9DpMIscLg8dZeZtUs7bxT9Yyru&sz=w800" alt="The most visited booth is the most interactive 1"></a><a href="https://drive.google.com/file/d/1dsaFdpVDQxg-bRl7Q49nmsfcWboc6JVh/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1dsaFdpVDQxg-bRl7Q49nmsfcWboc6JVh&sz=w800" alt="The most visited booth is the most interactive 2"></a><a href="https://drive.google.com/file/d/1-fnlquNKcLc2aLfXyhY3dJnFaI2oaISk/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=1-fnlquNKcLc2aLfXyhY3dJnFaI2oaISk&sz=w800" alt="The most visited booth is the most interactive 3"></a><a href="https://drive.google.com/file/d/11ZhJx582VnYCIlFPCDRlbuY8B-U1ZrvO/view" target="_blank" rel="noopener"><img loading="lazy" src="https://drive.google.com/thumbnail?id=11ZhJx582VnYCIlFPCDRlbuY8B-U1ZrvO&sz=w800" alt="The most visited booth is the most interactive 4"></a></div>
+<pre class="copy">Foot traffic follows interaction. Every time.
+
+Here&#x27;s what the busiest booths on the floor have in common, and how to plan for it before your next show.</pre><p class="tags">#TradeShowMarketing #EventTech #InteractiveBooth #SensaLab</p>
+<div class="actions"><button class="ok" data-v="ok">Aprobar</button><button class="ch" data-v="ch">Cambios</button><input placeholder="Nota (opcional)"></div>
+</article>
+</div>
+<div class="back"><h3>Backlog sin fecha (piezas LinkedIn de Audrey)</h3><ul><li>We are expanding the lab · <a href="https://drive.google.com/file/d/1py8YjvRL5zsv1rs3FDLR2r9v7xVfW5s1/view" target="_blank" rel="noopener">ver</a></li><li>Innovation meets emotion · <a href="https://drive.google.com/file/d/1WskoremIz-bBd_-p6AAJh09akt9aABK8/view" target="_blank" rel="noopener">ver</a></li><li>Emotion drives tech · <a href="https://drive.google.com/file/d/1pEoAlMI3I_ftBonYe5ORTDGJTbi4z6Vs/view" target="_blank" rel="noopener">ver</a></li><li>Real-time worlds · <a href="https://drive.google.com/file/d/1PlWpqxXdX4gChJ9Lc2fCCkHnstjFYlUP/view" target="_blank" rel="noopener">ver</a></li><li>Designed to immerse · <a href="https://drive.google.com/file/d/19OKSb5XW4QxfeXT-FLRbYkfJwsODWNR6/view" target="_blank" rel="noopener">ver</a></li><li>Built with emotion · <a href="https://drive.google.com/file/d/1hZrryPjge1M3WT6zFdhS6UaeuQDXE9EC/view" target="_blank" rel="noopener">ver</a></li><li>Based in Los Angeles (alt) · <a href="https://drive.google.com/file/d/1Yre28ZJZKCmnzYa134ysNGvxw3i4VLid/view" target="_blank" rel="noopener">ver</a></li><li>How brands win attention · <a href="https://drive.google.com/file/d/1bT-wZq1sOyJeJriq40-I8MjTJ4cdKrqh/view" target="_blank" rel="noopener">ver</a></li><li>USD invested in experiential marketing · <a href="https://drive.google.com/file/d/1s9XvPIrJan1xMhgzN8P8jci2thzjZaZe/view" target="_blank" rel="noopener">ver</a></li><li>Powerful pop-ups (4) · <a href="https://drive.google.com/file/d/1hBSlPRGvwbv63YgoKLTCW5Uyp0O5JGVL/view" target="_blank" rel="noopener">ver</a> <a href="https://drive.google.com/file/d/1jOw4fMtU6ecpWB6AAI6SNgkRXsMBBsU5/view" target="_blank" rel="noopener">ver</a> <a href="https://drive.google.com/file/d/1QAEzEZJ9_NpN_zsfF4_YAX8VPUC7AG4C/view" target="_blank" rel="noopener">ver</a> <a href="https://drive.google.com/file/d/1C2Go2EQKX7nmRsbnnN3D_dfRefV4wE0f/view" target="_blank" rel="noopener">ver</a></li></ul></div>
+</div>
+<div class="bar"><span id="cnt">0 aprobados · 0 con cambios</span><button id="all">Aprobar todo</button><button id="copy">Copiar resumen</button></div>
+<script>
+const K='sensa-review-v1';let st={};try{st=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}};
+const cards=[...document.querySelectorAll('.card')];
+function paint(){let o=0,c=0;cards.forEach(el=>{const s=st[el.dataset.id]||{};el.classList.toggle('ok',s.v==='ok');el.classList.toggle('ch',s.v==='ch');if(s.v==='ok')o++;if(s.v==='ch')c++;const i=el.querySelector('input');if(document.activeElement!==i)i.value=s.n||''});document.getElementById('cnt').textContent=o+' aprobados · '+c+' con cambios'}
+cards.forEach(el=>{const id=el.dataset.id;el.querySelectorAll('button').forEach(b=>b.onclick=()=>{st[id]=st[id]||{};st[id].v=st[id].v===b.dataset.v?null:b.dataset.v;save();paint()});el.querySelector('input').oninput=e=>{st[id]=st[id]||{};st[id].n=e.target.value;save()}});
+document.getElementById('all').onclick=()=>{cards.forEach(el=>{st[el.dataset.id]=Object.assign(st[el.dataset.id]||{},{v:'ok'})});save();paint()};
+document.getElementById('copy').onclick=async()=>{const ok=[],ch=[];cards.forEach(el=>{const s=st[el.dataset.id]||{};if(s.v==='ok')ok.push(el.dataset.id);if(s.v==='ch')ch.push(el.dataset.id+(s.n?' ('+s.n+')':''))});const t='Aprobados: '+(ok.join(', ')||'—')+'\nCambios: '+(ch.join('; ')||'—');try{await navigator.clipboard.writeText(t);document.getElementById('copy').textContent='Copiado ✓'}catch(e){prompt('Copia esto:',t)}setTimeout(()=>document.getElementById('copy').textContent='Copiar resumen',1500)};
+paint();
+</script>
+</body>
+</html>
