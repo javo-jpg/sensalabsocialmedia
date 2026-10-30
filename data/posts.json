@@ -25,7 +25,8 @@
     "1veh5CfcouIt-ced994m0NWsWtvIoX7nt",
     "11P1W7KT0Bxej6cDzY7rOIcV7L6o5afM_"
    ],
-   "status": "pendiente"
+   "status": "programado",
+   "pillar": "Relanzamiento"
   },
   {
    "id": "02",
@@ -47,8 +48,28 @@
    ],
    "copy": "Before picking the tech, pick the job.\n\nThe Simulator lets people try the product before they buy it.\nThe Collector trades a fun moment for real lead data.\nThe Advocate turns guests into the ones posting about your brand.\n\nSame screen, same sensors, totally different build depending on the KPI. Which one is your next event?",
    "hashtags": "#EventStrategy #ExperientialMarketing #EventROI #BrandActivations #LeadGeneration",
-   "note": "",
-   "status": "pendiente"
+   "note": "LinkedIn: subir como documento PDF (formato con más engagement).",
+   "status": "listo",
+   "pillar": "Fan page / insights"
+  },
+  {
+   "id": "N1",
+   "date": "2026-11-03",
+   "time": "11:00",
+   "title": "Lab drop: proyección en Sala Marte",
+   "format": "Reel 15–25s",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pillar": "Lab / BTS",
+   "copy": "Two projectors, one wall, a lot of cables. Here's how it looked when the lights went off.\n\nThis is what we mean by a lab: we test it on ourselves before it ever touches a client's event.",
+   "hashtags": "#ProjectionMapping #CreativeTech #BehindTheScenes #SensaLab",
+   "brief": "Footage que Jon grabó en el evento de Sala Marte (miércoles 28 oct). Hook en el primer segundo: luces apagadas → proyección encendida. Audio trending, sin voz. Texto en pantalla máx 6 palabras.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   },
   {
    "id": "03",
@@ -67,8 +88,26 @@
    ],
    "copy": "Meet the cast.\n\nWe design digital avatars that wave back, answer questions and stay in character for an eight-hour show day. Branded hosts for booths, lobbies and launches, built on a real-time pipeline so they keep up when 300 people show up at once.",
    "hashtags": "#DigitalAvatars #RealTime #TradeShowTech #InteractiveBooth #SensaLab",
-   "note": "",
-   "status": "pendiente"
+   "note": "LinkedIn: subir como documento PDF (formato con más engagement).",
+   "status": "listo",
+   "pillar": "Experiencias"
+  },
+  {
+   "id": "N2",
+   "date": "2026-11-05",
+   "time": "09:00",
+   "title": "LinkedIn de Jon: lo que aprendí haciendo activaciones",
+   "format": "Post personal (texto + 1 foto)",
+   "networks": [
+    "linkedin (perfil Jon)"
+   ],
+   "pillar": "Voz de founders",
+   "copy": "I've built interactive activations for brands for years. The thing nobody puts in the proposal: the tech is never what fails. It's the queue, the Wi-Fi, the staff who weren't trained, the screen nobody could see from the aisle.\n\nThat's why every Sensa Lab build gets tested in our own space before it ships.\n\nWhat's the most unexpected thing that broke at one of your events?",
+   "hashtags": "",
+   "brief": "Publicar desde el perfil de Jon (los perfiles personales tienen mucho más alcance que las páginas). Foto de Jon montando equipo. Javier comenta en la primera hora.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   },
   {
    "id": "04",
@@ -92,8 +131,9 @@
    ],
    "copy": "Three AI booths we keep coming back to:\n\nIntel at CES made data processing something you could see happen in front of you.\nSalesforce at Dreamforce turned attendee data into AI trading cards people actually kept.\nVonage told its cloud story through an interactive hero you got to play.\n\nThe common thread: none of them explained the product. They let you use it. Swipe for the breakdown.",
    "hashtags": "#AI #CES #Dreamforce #EventTech #ExperientialAI",
-   "note": "OJO: el slide 7 trae el título 'Salesforce AI Trading Cards' pero el texto es de Vonage. Hay que corregir el título en Canva antes del 6 nov.",
-   "status": "pendiente"
+   "note": "OJO: el slide 7 trae el título 'Salesforce AI Trading Cards' pero el texto es de Vonage. Hay que corregir el título en Canva antes del 6 nov. LinkedIn: subir como documento PDF (formato con más engagement).",
+   "status": "listo",
+   "pillar": "Fan page / insights"
   },
   {
    "id": "05",
@@ -112,7 +152,27 @@
    "copy": "What people think: interactive tech is fragile and something will crash in front of the client.\n\nWhat actually happens when it's built right: it runs all day, the queue keeps growing and nobody thinks about the tech at all.\n\nMost of our work is the boring part nobody sees. Testing, backups, a plan B for the Wi-Fi.",
    "hashtags": "#EventProfs #CreativeTechnology #TechProduction #ExperientialDesign",
    "note": "",
-   "status": "pendiente"
+   "status": "listo",
+   "pillar": "Fan page / insights"
+  },
+  {
+   "id": "N3",
+   "date": "2026-11-10",
+   "time": "11:00",
+   "title": "Signature Experience: Sensa Mirror",
+   "format": "Carrusel 5 slides",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pillar": "Experiencias",
+   "copy": "Sensa Mirror.\n\nGuests step in front of it, AI restyles them in your brand's world, and they walk away with a photo they actually want to post. Every shot carries your logo and every share is opt-in lead data.\n\nReady in three weeks. Ask us for the deck.",
+   "hashtags": "#AIPhotoBooth #BrandActivation #EventTech #SensaMirror",
+   "brief": "Slide 1: hook 'Your guests, restyled by AI'. 2: cómo funciona en 3 pasos. 3: antes/después real (foto de la Expo Foto). 4: qué recibe la marca (fotos, datos, alcance). 5: CTA 'DM MIRROR'. Mismo sistema visual de Audrey.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   },
   {
    "id": "06",
@@ -131,7 +191,27 @@
    "copy": "For agencies: you sell the experience, we build it.\n\nWe work white label with experiential agencies in the US and Mexico. Development, real-time logic, hardware and on-site tech, all under your brand. Your client never has to know we exist (unless you want to brag about us).\n\nDMs are open.",
    "hashtags": "#WhiteLabel #AgencyPartner #ExperientialMarketing #EventTech #B2B",
    "note": "Arte vertical: IG/FB como Story; LinkedIn como post.",
-   "status": "pendiente"
+   "status": "listo",
+   "pillar": "Agencias / white label"
+  },
+  {
+   "id": "N4",
+   "date": "2026-11-12",
+   "time": "11:00",
+   "title": "Road to LA 2028 #1: 10x activaciones",
+   "format": "Carrusel / Documento LinkedIn",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pillar": "LA 2028",
+   "copy": "Summer 2028 is coming to LA, and the people running the sponsor program expect roughly ten times as many brand activations as at Milano Cortina.\n\nThat means agencies are already scoping, and the good tech partners will be booked early. We're LA-based and building for it now.\n\nAgencies: if you're scoping 2028, let's talk early.",
+   "hashtags": "#LA2028 #SportsMarketing #ExperientialMarketing #LosAngeles",
+   "brief": "Fuente: Adweek (USOPP CEO John Slusher). NO usar aros, logo ni la palabra 'Olympics' en el arte; no somos patrocinador oficial. 5 slides: dato, qué significa, timing, qué tipo de activaciones, CTA.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   },
   {
    "id": "07",
@@ -150,7 +230,8 @@
    "copy": "Walk any expo floor and count the booths with a banner, a looping video and someone handing out pens.\n\nNow count the ones with a line.\n\nPeople don't remember what a brand told them. They remember what they did there. That's the whole case for experiential.",
    "hashtags": "#ExperientialMarketing #EventStrategy #B2BMarketing #BrandExperience",
    "note": "",
-   "status": "pendiente"
+   "status": "listo",
+   "pillar": "Fan page / insights"
   },
   {
    "id": "08",
@@ -173,8 +254,28 @@
    ],
    "copy": "Nike x SNIPES in Brooklyn: a photo booth that turned every visitor into a content creator.\nAdidas 'Faster Than': treadmills in-store, real-time metrics, the product proving itself.\nAdidas in Dubai: a billboard you could literally swim in.\n\nNone of these were about budget. They were about giving people something to do. Which one would you have stood in line for?",
    "hashtags": "#BrandActivation #ExperientialMarketing #Nike #Adidas #CreativeTechnology",
-   "note": "",
-   "status": "pendiente"
+   "note": "LinkedIn: subir como documento PDF (formato con más engagement).",
+   "status": "listo",
+   "pillar": "Fan page / insights"
+  },
+  {
+   "id": "N5",
+   "date": "2026-11-17",
+   "time": "11:00",
+   "title": "Signature Experience: Sensa Arcade",
+   "format": "Reel demo",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pillar": "Experiencias",
+   "copy": "Sensa Arcade: branded mini games, big buttons, a live leaderboard.\n\nPeople come back to beat their friend's score, and every round is a lead. Ready in three weeks for any booth.",
+   "hashtags": "#Gamification #TradeShow #InteractiveGames #SensaArcade",
+   "brief": "Video de alguien jugando con los botones + leaderboard en pantalla. Primer segundo: el botón golpeado. 15s.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   },
   {
    "id": "09",
@@ -193,7 +294,25 @@
    "copy": "Turn attendees into players.\n\nA touch game, a leaderboard or a sensor floor gives people a reason to stay at your booth longer, and every round is a lead you can follow up with.\n\nWe've packaged our favorite game mechanics into ready-to-brand experiences. Ask us for the playbook.",
    "hashtags": "#Gamification #LeadGeneration #TradeShowMarketing #InteractiveGames",
    "note": "Arte vertical: IG/FB como Story; LinkedIn como post.",
-   "status": "pendiente"
+   "status": "listo",
+   "pillar": "Agencias / white label"
+  },
+  {
+   "id": "N6",
+   "date": "2026-11-19",
+   "time": "09:00",
+   "title": "Encuesta LinkedIn + post de Javier",
+   "format": "Encuesta (página) + post personal",
+   "networks": [
+    "linkedin"
+   ],
+   "pillar": "Interacción",
+   "copy": "Poll for event marketers: what's the hardest part of an interactive activation?\n\n• Getting budget approved\n• Making it work on-site\n• Proving ROI after\n• Getting people to stop",
+   "hashtags": "",
+   "brief": "Encuesta de 7 días desde la página. Ese mismo día Javier publica en su perfil sobre medir ROI de activaciones (datos, QR, leads) y enlaza la encuesta.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   },
   {
    "id": "10",
@@ -215,8 +334,9 @@
    ],
    "copy": "Your booth could be the one people talk about, or the most forgettable one in the room.\n\nSwipe for four upgrades we build all the time: a body scanner with digital fitting, AI product customization, play-to-unlock games and more. Same square footage, very different result.",
    "hashtags": "#TradeShow #BoothDesign #EventTech #ExperientialDesign",
-   "note": "",
-   "status": "pendiente"
+   "note": "LinkedIn: subir como documento PDF (formato con más engagement).",
+   "status": "listo",
+   "pillar": "Fan page / insights"
   },
   {
    "id": "11",
@@ -235,7 +355,27 @@
    "copy": "If it looks great in photos but nobody touches it, it's decoration.\n\nAn activation should do a job: capture leads, explain the product, get people posting. If you can't name the job, the build isn't done yet.",
    "hashtags": "#BrandActivation #EventROI #ExperientialMarketing #CreativeTech",
    "note": "",
-   "status": "pendiente"
+   "status": "listo",
+   "pillar": "Fan page / insights"
+  },
+  {
+   "id": "N7",
+   "date": "2026-11-24",
+   "time": "11:00",
+   "title": "Signature Experience: Sensa Playboard",
+   "format": "Carrusel 5 slides",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pillar": "Experiencias",
+   "copy": "Sensa Playboard turns your product catalog into a game on a table.\n\nTap, match, win. People learn your lineup without reading a single spec sheet, and you get to see which products they played with most.",
+   "hashtags": "#InteractiveTable #RetailTech #BrandActivation #SensaPlayboard",
+   "brief": "Misma estructura que Sensa Mirror. Si no hay footage, renders limpios.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   },
   {
    "id": "12",
@@ -256,8 +396,47 @@
    ],
    "copy": "The most visited booth at any expo isn't the biggest. It's the most interactive.\n\nHow that plays out by industry:\nTech, gaming and automotive: motion tracking where your body controls the screen.\nFashion and beauty: an AI avatar that puts the visitor inside the brand.\nB2B: live data where every interaction feeds a leaderboard.\n\nWhich one fits your next show?",
    "hashtags": "#TradeShowMarketing #EventTech #InteractiveBooth #SensaLab",
-   "note": "",
-   "status": "pendiente"
+   "note": "LinkedIn: subir como documento PDF (formato con más engagement).",
+   "status": "listo",
+   "pillar": "Fan page / insights"
+  },
+  {
+   "id": "N8",
+   "date": "2026-11-27",
+   "time": "11:00",
+   "title": "Road to LA 2028 #2: lo que pueden y no pueden hacer las marcas no patrocinadoras",
+   "format": "Carrusel / Documento LinkedIn",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pillar": "LA 2028",
+   "copy": "Not an official sponsor? You can still own the summer of 2028 in LA. You just can't use the rings.\n\nSwipe for what's fair game: city-wide fan zones, viewing parties, cultural programming, neighborhood pop-ups, and what to avoid so legal doesn't kill the idea.",
+   "hashtags": "#LA2028 #AmbushMarketing #BrandStrategy #ExperientialMarketing",
+   "brief": "Contenido para guardar (los saves impulsan el alcance). Fuente: BizBash. Revisar con abogado antes de publicar; tono informativo, no legal.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
+  },
+  {
+   "id": "N9",
+   "date": "2026-11-30",
+   "time": "11:00",
+   "title": "Noviembre en el lab (recap)",
+   "format": "Reel 20s",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "pillar": "Lab / BTS",
+   "copy": "November in the lab: projections, arcade buttons, a lot of coffee and a few things we can't show yet.\n\nDecember's going to be busy. Want in on it? DMs open.",
+   "hashtags": "#BehindTheScenes #CreativeTech #SensaLab",
+   "brief": "Montaje de clips del mes, cortes rápidos, 1–1.5s por clip.",
+   "media": [],
+   "status": "por producir",
+   "note": ""
   }
  ],
  "backlog": [
@@ -330,5 +509,41 @@
    "date": "2026-11-27",
    "idea": "Primera pieza LA 2028 (pendiente de diseño)"
   }
+ ],
+ "stories": [
+  "L: encuesta o quiz (\"¿Cuál probarías?\", \"¿Adivina qué sensor es?\")",
+  "Ma/Ju: BTS crudo del día (montajes, pruebas, oficina)",
+  "Mi/V: compartir el post del feed + sticker de link",
+  "Cada story nueva se guarda en su highlight"
+ ],
+ "highlights": [
+  [
+   "LAB",
+   "Behind the scenes, pruebas, montajes"
+  ],
+  [
+   "MIRROR",
+   "Sensa Mirror: demo, resultados, FAQ"
+  ],
+  [
+   "ARCADE",
+   "Sensa Arcade: demo, leaderboard, FAQ"
+  ],
+  [
+   "PLAYBOARD",
+   "Sensa Playboard: demo, FAQ"
+  ],
+  [
+   "AGENCIES",
+   "White label: cómo trabajamos con agencias + testimonios"
+  ],
+  [
+   "LA 2028",
+   "Serie Road to LA 2028"
+  ],
+  [
+   "CONTACT",
+   "Cómo cotizar, link a la web, DM"
+  ]
  ]
 }

@@ -3,52 +3,115 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sensa Lab Parrilla</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<title>Sensa Lab Noviembre</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f4f3ef;--card:#fff;--ink:#111;--mute:#6b6b6b;--line:#e3e1da;--acc:#3b2bff;--ok:#0f8a4b;--ch:#c2410c}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0c0e;--card:#16161a;--ink:#f2f2f2;--mute:#9a9aa3;--line:#2a2a31;--acc:#8b80ff;--ok:#34d399;--ch:#fb923c}}
-:root[data-theme="dark"]{--bg:#0c0c0e;--card:#16161a;--ink:#f2f2f2;--mute:#9a9aa3;--line:#2a2a31;--acc:#8b80ff;--ok:#34d399;--ch:#fb923c}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif}
-.wrap{max-width:1100px;margin:0 auto;padding:32px 16px 140px}
-h1{font-size:clamp(28px,5vw,48px);margin:0 0 6px;letter-spacing:-.02em}
-.sub{color:var(--mute);margin:0 0 28px;max-width:70ch;line-height:1.5}
+:root{--bg:#f3f1fb;--card:#fff;--ink:#151233;--mute:#6c6888;--line:#e2def2;--acc:#3b2bff;--soft:#ebe6ff;--ok:#0f8a4b;--ch:#c2410c;--todo:#a16207}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0a14;--card:#15131f;--ink:#f1effa;--mute:#9b97b3;--line:#2a2740;--acc:#958aff;--soft:#211d38;--ok:#34d399;--ch:#fb923c;--todo:#facc15}}
+:root[data-theme="dark"]{--bg:#0b0a14;--card:#15131f;--ink:#f1effa;--mute:#9b97b3;--line:#2a2740;--acc:#958aff;--soft:#211d38;--ok:#34d399;--ch:#fb923c;--todo:#facc15}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter Tight",system-ui,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:32px 16px 140px}
+h1{font-size:clamp(30px,5.5vw,56px);margin:0 0 8px;letter-spacing:-.03em;line-height:1}
+.sub{color:var(--mute);margin:0 0 24px;max-width:72ch;line-height:1.55}
+nav.tabs{display:flex;gap:6px;margin:0 0 24px;flex-wrap:wrap;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
+nav.tabs a{font-size:15px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:99px;padding:7px 14px;background:var(--card)}
+section{margin:0 0 48px}h3.sec{font-size:24px;letter-spacing:-.02em;margin:0 0 16px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px;margin-bottom:20px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.kpi b{display:block;font-size:30px;letter-spacing:-.02em}.kpi span{color:var(--mute);font-size:14px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;line-height:1.55}.box h4{margin:0 0 8px;font-size:17px}.box p,.box ul{margin:0;color:var(--mute)}.box ul{padding-left:18px}.box li{margin:3px 0}
+.box .src{font-size:12px;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}th{font-weight:500;color:var(--mute);font-size:13px}
+.tw{overflow-x:auto}
+.hl{display:flex;gap:16px;overflow-x:auto;padding-bottom:6px}.hl figure{margin:0;flex:0 0 auto;width:120px;text-align:center}
+.hl img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid var(--line);padding:3px;background:var(--card)}
+.hl figcaption{font-size:12px;color:var(--mute);margin-top:6px}.hl figcaption b{display:block;color:var(--ink);font-size:13px}
+.bio{font-family:"JetBrains Mono",monospace;font-size:14px;background:var(--soft);border-radius:10px;padding:14px;white-space:pre-line;color:var(--ink)}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}.filters .f{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 12px;cursor:pointer}.filters .f.on{background:var(--acc);color:#fff;border-color:var(--acc)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
-.card.ok{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.card.ch{border-color:var(--ch);box-shadow:0 0 0 1px var(--ch)}
+.card.ok{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.card.ch{border-color:var(--ch);box-shadow:0 0 0 1px var(--ch)}.card.hide{display:none}
 header{display:flex;gap:12px;align-items:flex-start}.num{font-family:"JetBrains Mono",monospace;color:var(--acc);font-size:14px;padding-top:3px}
-.date{font-size:13px;color:var(--mute)}h2{margin:2px 0 0;font-size:20px;line-height:1.2}
-.meta{display:flex;flex-wrap:wrap;gap:6px}.meta span{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 9px;color:var(--mute)}.meta .fmt{color:var(--ink)}
-.strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip img{height:200px;width:auto;min-width:120px;border-radius:8px;background:var(--line);display:block;object-fit:cover}
+header>div{flex:1}.date{font-size:13px;color:var(--mute)}h2{margin:2px 0 0;font-size:20px;line-height:1.2;letter-spacing:-.01em}
+.badge{font-size:12px;border-radius:99px;padding:3px 9px;white-space:nowrap;border:1px solid currentColor}.s-prog{color:var(--acc)}.s-ok{color:var(--ok)}.s-todo{color:var(--todo)}
+.meta{display:flex;flex-wrap:wrap;gap:6px}.meta span{font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 9px;color:var(--mute)}.meta .fmt{color:var(--ink)}.meta .pil{background:var(--soft);border-color:transparent;color:var(--ink)}
+.strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.strip img{height:200px;width:auto;border-radius:8px;background:var(--line);display:block}
 .strip img.story{height:160px}.lbl{font-size:12px;color:var(--mute)}
+.brief{background:var(--soft);border-radius:10px;padding:14px;font-size:14px;line-height:1.5}
 .copy{white-space:pre-wrap;font-family:inherit;font-size:15px;line-height:1.5;margin:0}
 .tags{color:var(--acc);font-size:13px;margin:0}.note{font-size:13px;color:var(--mute);margin:0;border-left:2px solid var(--line);padding-left:8px}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.actions button{font:inherit;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:7px 14px;cursor:pointer}
 .actions input{flex:1;min-width:140px;font:inherit;font-size:14px;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
 .card.ok .ok{background:var(--ok);color:#fff;border-color:var(--ok)}.card.ch .ch{background:var(--ch);color:#fff;border-color:var(--ch)}
-.back{margin-top:36px;color:var(--mute)}.back li{margin:4px 0}.back a{color:var(--acc)}
-.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+.back{color:var(--mute)}.back li{margin:4px 0}.back a{color:var(--acc)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;z-index:6}
 .bar button{font:inherit;background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 16px;cursor:pointer}.bar span{color:var(--mute);font-size:14px}
 </style>
 </head>
 <body>
 <div class="wrap">
-<h1>Sensa Lab · Parrilla 30 oct – 25 nov</h1>
-<p class="sub">{{N}} posts para IG, FB y LinkedIn, los lunes, miércoles y viernes. Los diseños son de Audrey y los copies están reescritos. El primero sale hoy a las 16:00 CDMX. Marca cada post y copia el resumen al chat; también basta con responder “aprobado todo”. Clic en una imagen para abrir el original en Drive. El 27 nov queda libre para la primera pieza de LA 2028.</p>
+<h1>Sensa Lab · Noviembre</h1>
+<p class="sub">Estrategia, perfil y parrilla completa de IG, FB y LinkedIn. {{READY}} piezas ya están diseñadas (el material de Audrey) y {{TODO}} son nuevas, con brief y copy listos para producir. Marca cada post y copia el resumen al chat.</p>
+<nav class="tabs"><a href="#estrategia">Estrategia</a><a href="#perfil">Perfil y highlights</a><a href="#parrilla">Parrilla</a><a href="#backlog">Backlog</a></nav>
+
+<section id="estrategia">
+<h3 class="sec">Qué funciona en este mercado</h3>
+<div class="kpis">
+<div class="kpi"><b>~7%</b><span>engagement de los documentos PDF en LinkedIn, el formato #1</span></div>
+<div class="kpi"><b>0.55%</b><span>engagement de los carruseles en IG, contra 0.37% de las imágenes sueltas</span></div>
+<div class="kpi"><b>Reels</b><span>el formato con más comentarios en IG en todos los tamaños de cuenta</span></div>
+<div class="kpi"><b>~10x</b><span>activaciones de marca esperadas en LA28 frente a Milano Cortina</span></div>
+</div>
+<div class="cols">
+<div class="box"><h4>1 · Carruseles guardables</h4><p>Breakdowns de activaciones, comparativas y guías. Son lo que más se guarda y comparte. Aquí entra casi todo el material de Audrey.</p></div>
+<div class="box"><h4>2 · Reels del lab</h4><p>Pruebas, montajes y demos reales en Sala Marte y la oficina. Es contenido propio, imposible de copiar, y le da alcance a la cuenta.</p></div>
+<div class="box"><h4>3 · LinkedIn = documentos + founders</h4><p>Los carruseles se suben como PDF. Jon y Javier publican una vez por semana desde su perfil y la página amplifica.</p></div>
+<div class="box"><h4>4 · Vender 3 productos, no ingredientes</h4><p>Sensa Mirror, Arcade y Playboard, cada uno con su carrusel, su Reel demo, su highlight y CTA a DM.</p></div>
+<div class="box"><h4>5 · Serie Road to LA 2028</h4><p>Una o dos piezas al mes para agencias que ya están planeando. Ojo: sin aros, sin logo y sin “Olympics” en el arte, porque no somos patrocinador.</p></div>
+<div class="box"><h4>Cadencia</h4><ul><li>Feed: L/Mi/V carrusel o post; Ma/Ju Reel o LinkedIn personal</li><li>Stories diarias, con encuestas o quiz los lunes</li><li>1 encuesta al mes en LinkedIn</li><li>Revisar métricas cada lunes en la junta</li></ul></div>
+</div>
+<div class="tw" style="margin-top:16px"><table><thead><tr><th>Pilar</th><th>Qué es</th><th>Formato</th><th>Peso</th></tr></thead><tbody>
+<tr><td>Lab / BTS</td><td>Pruebas, montajes, proyecciones</td><td>Reels, stories</td><td>25%</td></tr>
+<tr><td>Experiencias</td><td>Mirror · Arcade · Playboard</td><td>Carrusel + Reel demo</td><td>25%</td></tr>
+<tr><td>Fan page / insights</td><td>Breakdowns de activaciones top, IA</td><td>Carruseles</td><td>30%</td></tr>
+<tr><td>LA 2028</td><td>Serie Road to LA 2028</td><td>Carrusel / PDF</td><td>10%</td></tr>
+<tr><td>Agencias</td><td>White label, cómo trabajamos</td><td>Post + highlight</td><td>10%</td></tr>
+</tbody></table></div>
+<div class="box" style="margin-top:14px"><p class="src">Fuentes: <a href="https://socialinsider.io/social-media-benchmarks/instagram" target="_blank" rel="noopener">Socialinsider IG 2026</a> · <a href="https://www.socialinsider.io/reports/linkedin-engagement-benchmarks" target="_blank" rel="noopener">Socialinsider LinkedIn 2026</a> · <a href="https://www.adweek.com/?p=1953517" target="_blank" rel="noopener">Adweek LA28</a> · <a href="https://www.bizbash.com/production-strategy/experiential-marketing-activations-sponsorships/article/13233389/los-angeles-olympics-what-event-producers-need-to-know-now" target="_blank" rel="noopener">BizBash LA28</a></p></div>
+</section>
+
+<section id="perfil">
+<h3 class="sec">Perfil y highlights</h3>
+<div class="cols">
+<div class="box"><h4>Bio de IG propuesta</h4><div class="bio">Creative tech lab · LA ↔ CDMX
+AI mirrors, arcade games &amp; interactive booths for brands + agencies
+Book a demo ↓ sensalab.io</div><p style="margin-top:10px">Posts fijados: el relanzamiento, Sensa Mirror y White label.</p></div>
+<div class="box"><h4>Plan de stories</h4><ul>{{STORIES}}</ul></div>
+</div>
+<div class="box" style="margin-top:14px"><h4>Highlights (portadas listas en el repo)</h4><div class="hl">{{HIGHLIGHTS}}</div></div>
+</section>
+
+<section id="parrilla">
+<h3 class="sec">Parrilla · {{N}} piezas</h3>
+<div class="filters">{{FILTERS}}</div>
 <div class="grid">
 {{CARDS}}
 </div>
-<div class="back"><h3>Backlog sin fecha (piezas LinkedIn de Audrey)</h3><ul>{{BACKLOG}}</ul></div>
+</section>
+
+<section id="backlog" class="back"><h3 class="sec">Backlog sin fecha (piezas de LinkedIn de Audrey)</h3><ul>{{BACKLOG}}</ul></section>
 </div>
 <div class="bar"><span id="cnt">0 aprobados · 0 con cambios</span><button id="all">Aprobar todo</button><button id="copy">Copiar resumen</button></div>
 <script>
-const K='sensa-review-v1';let st={};try{st=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+const K='sensa-review-v2';let st={};try{st=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
 const save=()=>{try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}};
 const cards=[...document.querySelectorAll('.card')];
 function paint(){let o=0,c=0;cards.forEach(el=>{const s=st[el.dataset.id]||{};el.classList.toggle('ok',s.v==='ok');el.classList.toggle('ch',s.v==='ch');if(s.v==='ok')o++;if(s.v==='ch')c++;const i=el.querySelector('input');if(document.activeElement!==i)i.value=s.n||''});document.getElementById('cnt').textContent=o+' aprobados · '+c+' con cambios'}
-cards.forEach(el=>{const id=el.dataset.id;el.querySelectorAll('button').forEach(b=>b.onclick=()=>{st[id]=st[id]||{};st[id].v=st[id].v===b.dataset.v?null:b.dataset.v;save();paint()});el.querySelector('input').oninput=e=>{st[id]=st[id]||{};st[id].n=e.target.value;save()}});
+cards.forEach(el=>{const id=el.dataset.id;el.querySelectorAll('.actions button').forEach(b=>b.onclick=()=>{st[id]=st[id]||{};st[id].v=st[id].v===b.dataset.v?null:b.dataset.v;save();paint()});el.querySelector('input').oninput=e=>{st[id]=st[id]||{};st[id].n=e.target.value;save()}});
+document.querySelectorAll('.filters .f').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters .f').forEach(x=>x.classList.toggle('on',x===b));cards.forEach(el=>el.classList.toggle('hide',!!b.dataset.p&&el.dataset.pillar!==b.dataset.p))});
 document.getElementById('all').onclick=()=>{cards.forEach(el=>{st[el.dataset.id]=Object.assign(st[el.dataset.id]||{},{v:'ok'})});save();paint()};
-document.getElementById('copy').onclick=async()=>{const ok=[],ch=[];cards.forEach(el=>{const s=st[el.dataset.id]||{};if(s.v==='ok')ok.push(el.dataset.id);if(s.v==='ch')ch.push(el.dataset.id+(s.n?' ('+s.n+')':''))});const t='Aprobados: '+(ok.join(', ')||'—')+'\nCambios: '+(ch.join('; ')||'—');try{await navigator.clipboard.writeText(t);document.getElementById('copy').textContent='Copiado ✓'}catch(e){prompt('Copia esto:',t)}setTimeout(()=>document.getElementById('copy').textContent='Copiar resumen',1500)};
+document.getElementById('copy').onclick=async()=>{const ok=[],ch=[];cards.forEach(el=>{const s=st[el.dataset.id]||{};if(s.v==='ok')ok.push(el.dataset.id);if(s.v==='ch')ch.push(el.dataset.id+(s.n?' ('+s.n+')':''))});const t='Aprobados: '+(ok.join(', ')||'—')+'\nCambios: '+(ch.join('; ')||'—');const btn=document.getElementById('copy');try{await navigator.clipboard.writeText(t);btn.textContent='Copiado ✓'}catch(e){btn.textContent='No se pudo copiar'}setTimeout(()=>btn.textContent='Copiar resumen',1500)};
 paint();
 </script>
 </body>

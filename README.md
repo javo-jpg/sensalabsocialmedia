@@ -6,6 +6,8 @@ Centro de operación de las redes de Sensa Lab (Instagram `@sensa.lab`, Facebook
 - `data/posts.json` — fuente única de la parrilla (fechas, copies, media en Drive, redes, estado).
 - `calendar/` — parrilla legible por mes (se genera desde el JSON).
 - `brand/voice.md` — tono y reglas de copy.
+- `brand/strategy.md` — estrategia, pilares, cadencia, perfil y highlights.
+- `media/highlights/` — portadas de highlights de IG.
 - `scripts/build.py` — genera `calendar/*.md` y `preview/index.html` desde el JSON.
 - `preview/` — página de revisión para aprobar contenido.
 
