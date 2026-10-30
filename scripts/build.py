@@ -4,11 +4,15 @@ d = json.load(open(os.path.join(ROOT, "data/posts.json")))
 DAYS = ["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"]
 def fmt(ds):
     dt = datetime.date.fromisoformat(ds); return f"{DAYS[dt.weekday()]} {dt.day} {['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][dt.month]}"
-def thumb(i): return f"https://drive.google.com/thumbnail?id={i}&sz=w800"
+import base64, io
+from PIL import Image
+def thumb(i):
+    im=Image.open(os.path.join(ROOT,"media",i+".jpg")); im.thumbnail((440,780)); b=io.BytesIO(); im.save(b,"JPEG",quality=72)
+    return "data:image/jpeg;base64,"+base64.b64encode(b.getvalue()).decode()
 def view(i): return f"https://drive.google.com/file/d/{i}/view"
 # calendar md
 os.makedirs(os.path.join(ROOT,"calendar"), exist_ok=True)
-md = ["# Parrilla Sensa Lab — 30 oct a 27 nov 2026\n", "| # | Fecha | Hora CDMX | Pieza | Formato | Redes |","|---|---|---|---|---|---|"]
+md = ["# Parrilla Sensa Lab — 30 oct a 25 nov 2026\n", "| # | Fecha | Hora CDMX | Pieza | Formato | Redes |","|---|---|---|---|---|---|"]
 for p in d["posts"]:
     md.append(f"| {p['id']} | {fmt(p['date'])} | {p['time']} | {p['title']} | {p['format']} | {', '.join(p['networks'])} |")
 md.append("\n## Copies\n")

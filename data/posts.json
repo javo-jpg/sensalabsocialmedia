@@ -1,70 +1,334 @@
 {
- "brand":"Sensa Lab","metricool_brand_id":"7566765","timezone":"America/Mexico_City",
- "posts":[
- {"id":"01","date":"2026-10-30","time":"16:00","title":"Not a studio. A lab.","format":"Post + Story","networks":["instagram","facebook","linkedin"],
-  "media":["1KeOokr198UkOO-kvubK_iZeaB6ucqzXT"],"story":["1veh5CfcouIt-ced994m0NWsWtvIoX7nt","11P1W7KT0Bxej6cDzY7rOIcV7L6o5afM_"],
-  "copy":"A studio executes the idea you already have.\nA lab goes looking for the one nobody has tried yet.\n\nWe're Sensa Lab. We build interactive experiences for brands: AI mirrors, arcade-style games, sensor-driven installations, things people walk up to and actually touch.\n\nNew website is live. Take a look at what we've been building → sensalab.io",
-  "hashtags":"#CreativeTechnology #ExperientialMarketing #InteractiveExperiences #EventTech #SensaLab",
-  "note":"Relanzamiento. Story 1: arte 'a Lab'. Story 2: 'Visit our website' con link sticker."},
- {"id":"02","date":"2026-11-02","time":"11:00","title":"Based in LA. Global by design.","format":"Post estático","networks":["instagram","facebook","linkedin"],
-  "media":["13UwjaE12fn_H2RXW3s03gmS5i_RwDB8U"],
-  "copy":"Home base: Los Angeles.\nTeam and partners: Mexico City, Miami and wherever the project lands.\n\nOur last AI commercial was built by a crew in Russia for a brand launching in Brazil. That's pretty normal for us. Time zones are a scheduling problem, not a creative one.\n\nIf you're an agency or brand with an activation coming up, we'd like to hear about it.",
-  "hashtags":"#LosAngeles #CreativeTech #BrandActivation #ExperientialAgency #SensaLabLA","note":""},
- {"id":"03","date":"2026-11-04","time":"11:00","title":"Not all interactive experiences share the same goal","format":"Carrusel (5)","networks":["instagram","facebook","linkedin"],
-  "media":["1ggL9_llGWwkKGW15LRcAADrcWO7b9aZI","1xYTbo_FoiTd3HaZLZwmoMysPw6hzAUJW","1osASGq3SkXk7jjVswU_O_nXTtwg-LUE2","1f-l7d902MFRTB31twVgOEbKq-nwHgX_z","1lLwNMzVYIJ0MqvAyjI3SwU0uSj12mNus"],
-  "copy":"Before picking the tech, pick the job.\n\nThe Simulator lets people try the product before they buy it.\nThe Collector trades a fun moment for real lead data.\nThe Advocate turns guests into the ones posting about your brand.\n\nSame screen, same sensors, totally different build depending on the KPI. Which one is your next event?",
-  "hashtags":"#EventStrategy #ExperientialMarketing #EventROI #BrandActivations #LeadGeneration","note":""},
- {"id":"04","date":"2026-11-06","time":"11:00","title":"Avatars that perform","format":"Carrusel (2)","networks":["instagram","facebook","linkedin"],
-  "media":["1KZTBuZ5E3p2JoF0QJYCCr7oPTc05AbJk","1BGTd5Yaom7VONxIuha9D9CM9dHbnciDN"],
-  "copy":"Digital avatars that talk back, react to the crowd and stay in character for an eight-hour show day.\n\nWe build the real-time pipeline behind them: motion capture, voice, rendering and the logic that keeps it from breaking when 300 people show up at once.",
-  "hashtags":"#DigitalAvatars #MotionCapture #RealTime #TradeShowTech #SensaLab","note":""},
- {"id":"05","date":"2026-11-09","time":"11:00","title":"Top AI experiential booths","format":"Carrusel (7)","networks":["instagram","facebook","linkedin"],
-  "media":["1WXG4E6f_a6INkLimEpE9AH_WlhQsFB6l","1Icg2X109dAWHFC76yJ-pYm_HgdSjTPLm","1rkt7YwTD6zMvE9qeixquwzAQxlLnhNOX","1phV7k5s5LjeiLMzlsbU78tlUrn2fkxd3","1OBj7fwZhZ1W3gbtAUQ-qLOSk8frLw82o","1G-hG6S0z3Lz9CfFEbcGI_X7pIxFLDhFg","1A9-RAChuFFNoWy06T2PZoc7kVxStaXSG"],
-  "copy":"Three AI booths we keep coming back to:\n\nIntel at CES made data processing something you could see happen in front of you.\nSalesforce at Dreamforce turned attendee data into AI trading cards people actually kept.\nVonage told its cloud story through an interactive hero you got to play.\n\nThe common thread: none of them explained the product. They let you use it. Swipe for the breakdown.",
-  "hashtags":"#AI #CES #Dreamforce #EventTech #ExperientialAI","note":""},
- {"id":"06","date":"2026-11-11","time":"11:00","title":"Perception vs. Reality","format":"Post estático","networks":["instagram","facebook","linkedin"],
-  "media":["1FmTxuFvgFLUKpdT07gB2KyXvn7r93fHF"],
-  "copy":"What people think: interactive tech is fragile and something will crash in front of the client.\n\nWhat actually happens when it's built right: it runs all day, the queue keeps growing and nobody thinks about the tech at all.\n\nMost of our work is the boring part nobody sees. Testing, backups, a plan B for the Wi-Fi.",
-  "hashtags":"#EventProfs #CreativeTechnology #TechProduction #ExperientialDesign","note":""},
- {"id":"07","date":"2026-11-13","time":"11:00","title":"What is white label?","format":"Story + LinkedIn","networks":["instagram","facebook","linkedin"],
-  "media":["1CeBGXpiSMiCT2S91aNLKl6NnUyZgx7vE"],
-  "copy":"For agencies: you sell the experience, we build it.\n\nWe work white label with experiential agencies in the US and Mexico. Development, real-time logic, hardware and on-site tech, all under your brand. Your client never has to know we exist (unless you want to brag about us).\n\nDMs are open.",
-  "hashtags":"#WhiteLabel #AgencyPartner #ExperientialMarketing #EventTech #B2B","note":"Arte vertical: IG/FB como Story; LinkedIn como post."},
- {"id":"08","date":"2026-11-16","time":"11:00","title":"Why traditional marketing isn't working anymore","format":"Post estático","networks":["instagram","facebook","linkedin"],
-  "media":["1-WM8vtrYEmKHCR9OLmgeKBxj1V7tRcfZ"],
-  "copy":"Walk any expo floor and count the booths with a banner, a looping video and someone handing out pens.\n\nNow count the ones with a line.\n\nPeople don't remember what a brand told them. They remember what they did there. That's the whole case for experiential.",
-  "hashtags":"#ExperientialMarketing #EventStrategy #B2BMarketing #BrandExperience","note":""},
- {"id":"09","date":"2026-11-18","time":"11:00","title":"The brands you remember don't just advertise","format":"Carrusel (3) + Story Step Inside","networks":["instagram","facebook","linkedin"],
-  "media":["19YrIkX0THY0IIuZc-7o7QepcwHN2w1p6","1WSQwhI0sXrr0fEWTNuOjkASq0Psk1CiC","1SS0Zvbqx7zOk5NC0wz8hjQHg-uCHpEN2"],"story":["1DpRXn0CKEpEznnMStiQ_uKqsBRQFJkRe"],
-  "copy":"Nike x SNIPES in Brooklyn: a photo booth that turned every visitor into a content creator.\nAdidas 'Faster Than': treadmills in-store, real-time metrics, the product proving itself.\nAdidas in Dubai: a billboard you could literally swim in.\n\nNone of these were about budget. They were about giving people something to do. Which one would you have stood in line for?",
-  "hashtags":"#BrandActivation #ExperientialMarketing #Nike #Adidas #CreativeTechnology","note":""},
- {"id":"10","date":"2026-11-20","time":"11:00","title":"Get the playbook","format":"Story + LinkedIn","networks":["instagram","facebook","linkedin"],
-  "media":["1sTi8wK2KP0j-4cw9uM3e3KTS1LsBStXQ"],
-  "copy":"Turn attendees into players.\n\nA touch game, a leaderboard or a sensor floor gives people a reason to stay at your booth longer, and every round is a lead you can follow up with.\n\nWe've packaged our favorite game mechanics into ready-to-brand experiences. Ask us for the playbook.",
-  "hashtags":"#Gamification #LeadGeneration #TradeShowMarketing #InteractiveGames","note":"Arte vertical: IG/FB como Story; LinkedIn como post."},
- {"id":"11","date":"2026-11-23","time":"11:00","title":"Your booth: boring vs. noteworthy","format":"Carrusel (5)","networks":["instagram","facebook","linkedin"],
-  "media":["14H4knetR-f51wdZqsf281FbmAnh4yW7p","136S68-4gGGnw4ljKly1bM6Y07yFPbwxI","1X1YSGm8G7HswgTgo_4cZTw_rsWAU1tyW","10Ojfh6BTAqn9aS6XQcb4UajY8X9srxuR","1uo7IBU4jwBAJKNdAOhZvF1NyTGWv00J2"],
-  "copy":"Same square footage, same budget, very different result.\n\nSwipe to see the small changes that take a booth from 'walk past' to 'wait, what is that?'",
-  "hashtags":"#TradeShow #BoothDesign #EventTech #ExperientialDesign","note":""},
- {"id":"12","date":"2026-11-25","time":"11:00","title":"Is your activation just for decoration?","format":"Post estático","networks":["instagram","facebook","linkedin"],
-  "media":["1XIRPaB8oFdYEQ2QHZMte2dJoQT0B0kwu"],
-  "copy":"If it looks great in photos but nobody touches it, it's decoration.\n\nAn activation should do a job: capture leads, explain the product, get people posting. If you can't name the job, the build isn't done yet.",
-  "hashtags":"#BrandActivation #EventROI #ExperientialMarketing #CreativeTech","note":""},
- {"id":"13","date":"2026-11-27","time":"11:00","title":"The most visited booth is the most interactive","format":"Carrusel (4)","networks":["instagram","facebook","linkedin"],
-  "media":["1sSi-H-9DpMIscLg8dZeZtUs7bxT9Yyru","1dsaFdpVDQxg-bRl7Q49nmsfcWboc6JVh","1-fnlquNKcLc2aLfXyhY3dJnFaI2oaISk","11ZhJx582VnYCIlFPCDRlbuY8B-U1ZrvO"],
-  "copy":"Foot traffic follows interaction. Every time.\n\nHere's what the busiest booths on the floor have in common, and how to plan for it before your next show.",
-  "hashtags":"#TradeShowMarketing #EventTech #InteractiveBooth #SensaLab","note":""}
+ "brand": "Sensa Lab",
+ "metricool_brand_id": "7566765",
+ "timezone": "America/Mexico_City",
+ "posts": [
+  {
+   "id": "01",
+   "date": "2026-10-30",
+   "time": "16:00",
+   "title": "Global by Design + Stories 'Not a studio… a Lab'",
+   "format": "Post estático + 3 Stories",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "13UwjaE12fn_H2RXW3s03gmS5i_RwDB8U"
+   ],
+   "copy": "Not a studio. A lab.\n\nA studio executes the idea you already have. A lab goes looking for the one nobody has tried yet. That's how we work: AI mirrors, arcade-style games, sensor-driven installations, things people walk up to and actually touch.\n\nHome base is Los Angeles, with team and partners in Mexico City and Miami. Our last AI commercial was built by a crew in Russia for a brand launching in Brazil, which is pretty normal for us.\n\nNew website is live → sensalab.io",
+   "hashtags": "#CreativeTechnology #ExperientialMarketing #InteractiveExperiences #LosAngeles #SensaLab",
+   "note": "Relanzamiento. Stories en secuencia: 'Not a studio…' → 'a Lab' → 'Visit our website' (link sticker a sensalab.io).",
+   "story": [
+    "1KeOokr198UkOO-kvubK_iZeaB6ucqzXT",
+    "1veh5CfcouIt-ced994m0NWsWtvIoX7nt",
+    "11P1W7KT0Bxej6cDzY7rOIcV7L6o5afM_"
+   ],
+   "status": "pendiente"
+  },
+  {
+   "id": "02",
+   "date": "2026-11-02",
+   "time": "11:00",
+   "title": "Not all interactive experiences share the same goal",
+   "format": "Carrusel (5)",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1ggL9_llGWwkKGW15LRcAADrcWO7b9aZI",
+    "1xYTbo_FoiTd3HaZLZwmoMysPw6hzAUJW",
+    "1osASGq3SkXk7jjVswU_O_nXTtwg-LUE2",
+    "1f-l7d902MFRTB31twVgOEbKq-nwHgX_z",
+    "1lLwNMzVYIJ0MqvAyjI3SwU0uSj12mNus"
+   ],
+   "copy": "Before picking the tech, pick the job.\n\nThe Simulator lets people try the product before they buy it.\nThe Collector trades a fun moment for real lead data.\nThe Advocate turns guests into the ones posting about your brand.\n\nSame screen, same sensors, totally different build depending on the KPI. Which one is your next event?",
+   "hashtags": "#EventStrategy #ExperientialMarketing #EventROI #BrandActivations #LeadGeneration",
+   "note": "",
+   "status": "pendiente"
+  },
+  {
+   "id": "03",
+   "date": "2026-11-04",
+   "time": "11:00",
+   "title": "Avatars that perform",
+   "format": "Carrusel (2)",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1KZTBuZ5E3p2JoF0QJYCCr7oPTc05AbJk",
+    "1BGTd5Yaom7VONxIuha9D9CM9dHbnciDN"
+   ],
+   "copy": "Meet the cast.\n\nWe design digital avatars that wave back, answer questions and stay in character for an eight-hour show day. Branded hosts for booths, lobbies and launches, built on a real-time pipeline so they keep up when 300 people show up at once.",
+   "hashtags": "#DigitalAvatars #RealTime #TradeShowTech #InteractiveBooth #SensaLab",
+   "note": "",
+   "status": "pendiente"
+  },
+  {
+   "id": "04",
+   "date": "2026-11-06",
+   "time": "11:00",
+   "title": "Top AI experiential booths",
+   "format": "Carrusel (7)",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1WXG4E6f_a6INkLimEpE9AH_WlhQsFB6l",
+    "1Icg2X109dAWHFC76yJ-pYm_HgdSjTPLm",
+    "1rkt7YwTD6zMvE9qeixquwzAQxlLnhNOX",
+    "1phV7k5s5LjeiLMzlsbU78tlUrn2fkxd3",
+    "1OBj7fwZhZ1W3gbtAUQ-qLOSk8frLw82o",
+    "1G-hG6S0z3Lz9CfFEbcGI_X7pIxFLDhFg",
+    "1A9-RAChuFFNoWy06T2PZoc7kVxStaXSG"
+   ],
+   "copy": "Three AI booths we keep coming back to:\n\nIntel at CES made data processing something you could see happen in front of you.\nSalesforce at Dreamforce turned attendee data into AI trading cards people actually kept.\nVonage told its cloud story through an interactive hero you got to play.\n\nThe common thread: none of them explained the product. They let you use it. Swipe for the breakdown.",
+   "hashtags": "#AI #CES #Dreamforce #EventTech #ExperientialAI",
+   "note": "OJO: el slide 7 trae el título 'Salesforce AI Trading Cards' pero el texto es de Vonage. Hay que corregir el título en Canva antes del 6 nov.",
+   "status": "pendiente"
+  },
+  {
+   "id": "05",
+   "date": "2026-11-09",
+   "time": "11:00",
+   "title": "Perception vs. Reality",
+   "format": "Post estático",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1FmTxuFvgFLUKpdT07gB2KyXvn7r93fHF"
+   ],
+   "copy": "What people think: interactive tech is fragile and something will crash in front of the client.\n\nWhat actually happens when it's built right: it runs all day, the queue keeps growing and nobody thinks about the tech at all.\n\nMost of our work is the boring part nobody sees. Testing, backups, a plan B for the Wi-Fi.",
+   "hashtags": "#EventProfs #CreativeTechnology #TechProduction #ExperientialDesign",
+   "note": "",
+   "status": "pendiente"
+  },
+  {
+   "id": "06",
+   "date": "2026-11-11",
+   "time": "11:00",
+   "title": "What is white label?",
+   "format": "Story IG/FB + post LinkedIn",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1CeBGXpiSMiCT2S91aNLKl6NnUyZgx7vE"
+   ],
+   "copy": "For agencies: you sell the experience, we build it.\n\nWe work white label with experiential agencies in the US and Mexico. Development, real-time logic, hardware and on-site tech, all under your brand. Your client never has to know we exist (unless you want to brag about us).\n\nDMs are open.",
+   "hashtags": "#WhiteLabel #AgencyPartner #ExperientialMarketing #EventTech #B2B",
+   "note": "Arte vertical: IG/FB como Story; LinkedIn como post.",
+   "status": "pendiente"
+  },
+  {
+   "id": "07",
+   "date": "2026-11-13",
+   "time": "11:00",
+   "title": "Why traditional marketing isn't working anymore",
+   "format": "Post estático",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1-WM8vtrYEmKHCR9OLmgeKBxj1V7tRcfZ"
+   ],
+   "copy": "Walk any expo floor and count the booths with a banner, a looping video and someone handing out pens.\n\nNow count the ones with a line.\n\nPeople don't remember what a brand told them. They remember what they did there. That's the whole case for experiential.",
+   "hashtags": "#ExperientialMarketing #EventStrategy #B2BMarketing #BrandExperience",
+   "note": "",
+   "status": "pendiente"
+  },
+  {
+   "id": "08",
+   "date": "2026-11-16",
+   "time": "11:00",
+   "title": "The brands you remember don't just advertise",
+   "format": "Carrusel (3) + Story Step Inside",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "19YrIkX0THY0IIuZc-7o7QepcwHN2w1p6",
+    "1WSQwhI0sXrr0fEWTNuOjkASq0Psk1CiC",
+    "1SS0Zvbqx7zOk5NC0wz8hjQHg-uCHpEN2"
+   ],
+   "story": [
+    "1DpRXn0CKEpEznnMStiQ_uKqsBRQFJkRe"
+   ],
+   "copy": "Nike x SNIPES in Brooklyn: a photo booth that turned every visitor into a content creator.\nAdidas 'Faster Than': treadmills in-store, real-time metrics, the product proving itself.\nAdidas in Dubai: a billboard you could literally swim in.\n\nNone of these were about budget. They were about giving people something to do. Which one would you have stood in line for?",
+   "hashtags": "#BrandActivation #ExperientialMarketing #Nike #Adidas #CreativeTechnology",
+   "note": "",
+   "status": "pendiente"
+  },
+  {
+   "id": "09",
+   "date": "2026-11-18",
+   "time": "11:00",
+   "title": "Get the playbook",
+   "format": "Story IG/FB + post LinkedIn",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1sTi8wK2KP0j-4cw9uM3e3KTS1LsBStXQ"
+   ],
+   "copy": "Turn attendees into players.\n\nA touch game, a leaderboard or a sensor floor gives people a reason to stay at your booth longer, and every round is a lead you can follow up with.\n\nWe've packaged our favorite game mechanics into ready-to-brand experiences. Ask us for the playbook.",
+   "hashtags": "#Gamification #LeadGeneration #TradeShowMarketing #InteractiveGames",
+   "note": "Arte vertical: IG/FB como Story; LinkedIn como post.",
+   "status": "pendiente"
+  },
+  {
+   "id": "10",
+   "date": "2026-11-20",
+   "time": "11:00",
+   "title": "Your booth: boring vs. noteworthy",
+   "format": "Carrusel (5)",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "14H4knetR-f51wdZqsf281FbmAnh4yW7p",
+    "136S68-4gGGnw4ljKly1bM6Y07yFPbwxI",
+    "1X1YSGm8G7HswgTgo_4cZTw_rsWAU1tyW",
+    "10Ojfh6BTAqn9aS6XQcb4UajY8X9srxuR",
+    "1uo7IBU4jwBAJKNdAOhZvF1NyTGWv00J2"
+   ],
+   "copy": "Your booth could be the one people talk about, or the most forgettable one in the room.\n\nSwipe for four upgrades we build all the time: a body scanner with digital fitting, AI product customization, play-to-unlock games and more. Same square footage, very different result.",
+   "hashtags": "#TradeShow #BoothDesign #EventTech #ExperientialDesign",
+   "note": "",
+   "status": "pendiente"
+  },
+  {
+   "id": "11",
+   "date": "2026-11-23",
+   "time": "11:00",
+   "title": "Is your activation just for decoration?",
+   "format": "Post estático",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1XIRPaB8oFdYEQ2QHZMte2dJoQT0B0kwu"
+   ],
+   "copy": "If it looks great in photos but nobody touches it, it's decoration.\n\nAn activation should do a job: capture leads, explain the product, get people posting. If you can't name the job, the build isn't done yet.",
+   "hashtags": "#BrandActivation #EventROI #ExperientialMarketing #CreativeTech",
+   "note": "",
+   "status": "pendiente"
+  },
+  {
+   "id": "12",
+   "date": "2026-11-25",
+   "time": "11:00",
+   "title": "The most visited booth is the most interactive",
+   "format": "Carrusel (4)",
+   "networks": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "media": [
+    "1sSi-H-9DpMIscLg8dZeZtUs7bxT9Yyru",
+    "1dsaFdpVDQxg-bRl7Q49nmsfcWboc6JVh",
+    "1-fnlquNKcLc2aLfXyhY3dJnFaI2oaISk",
+    "11ZhJx582VnYCIlFPCDRlbuY8B-U1ZrvO"
+   ],
+   "copy": "The most visited booth at any expo isn't the biggest. It's the most interactive.\n\nHow that plays out by industry:\nTech, gaming and automotive: motion tracking where your body controls the screen.\nFashion and beauty: an AI avatar that puts the visitor inside the brand.\nB2B: live data where every interaction feeds a leaderboard.\n\nWhich one fits your next show?",
+   "hashtags": "#TradeShowMarketing #EventTech #InteractiveBooth #SensaLab",
+   "note": "",
+   "status": "pendiente"
+  }
  ],
- "backlog":[
-  {"title":"We are expanding the lab","media":["1py8YjvRL5zsv1rs3FDLR2r9v7xVfW5s1"]},
-  {"title":"Innovation meets emotion","media":["1WskoremIz-bBd_-p6AAJh09akt9aABK8"]},
-  {"title":"Emotion drives tech","media":["1pEoAlMI3I_ftBonYe5ORTDGJTbi4z6Vs"]},
-  {"title":"Real-time worlds","media":["1PlWpqxXdX4gChJ9Lc2fCCkHnstjFYlUP"]},
-  {"title":"Designed to immerse","media":["19OKSb5XW4QxfeXT-FLRbYkfJwsODWNR6"]},
-  {"title":"Built with emotion","media":["1hZrryPjge1M3WT6zFdhS6UaeuQDXE9EC"]},
-  {"title":"Based in Los Angeles (alt)","media":["1Yre28ZJZKCmnzYa134ysNGvxw3i4VLid"]},
-  {"title":"How brands win attention","media":["1bT-wZq1sOyJeJriq40-I8MjTJ4cdKrqh"]},
-  {"title":"USD invested in experiential marketing","media":["1s9XvPIrJan1xMhgzN8P8jci2thzjZaZe"]},
-  {"title":"Powerful pop-ups (4)","media":["1hBSlPRGvwbv63YgoKLTCW5Uyp0O5JGVL","1jOw4fMtU6ecpWB6AAI6SNgkRXsMBBsU5","1QAEzEZJ9_NpN_zsfF4_YAX8VPUC7AG4C","1C2Go2EQKX7nmRsbnnN3D_dfRefV4wE0f"]}
+ "backlog": [
+  {
+   "title": "We are expanding the lab",
+   "media": [
+    "1py8YjvRL5zsv1rs3FDLR2r9v7xVfW5s1"
+   ]
+  },
+  {
+   "title": "Innovation meets emotion",
+   "media": [
+    "1WskoremIz-bBd_-p6AAJh09akt9aABK8"
+   ]
+  },
+  {
+   "title": "Emotion drives tech",
+   "media": [
+    "1pEoAlMI3I_ftBonYe5ORTDGJTbi4z6Vs"
+   ]
+  },
+  {
+   "title": "Real-time worlds",
+   "media": [
+    "1PlWpqxXdX4gChJ9Lc2fCCkHnstjFYlUP"
+   ]
+  },
+  {
+   "title": "Designed to immerse",
+   "media": [
+    "19OKSb5XW4QxfeXT-FLRbYkfJwsODWNR6"
+   ]
+  },
+  {
+   "title": "Built with emotion",
+   "media": [
+    "1hZrryPjge1M3WT6zFdhS6UaeuQDXE9EC"
+   ]
+  },
+  {
+   "title": "Based in Los Angeles (alt)",
+   "media": [
+    "1Yre28ZJZKCmnzYa134ysNGvxw3i4VLid"
+   ]
+  },
+  {
+   "title": "How brands win attention",
+   "media": [
+    "1bT-wZq1sOyJeJriq40-I8MjTJ4cdKrqh"
+   ]
+  },
+  {
+   "title": "USD invested in experiential marketing",
+   "media": [
+    "1s9XvPIrJan1xMhgzN8P8jci2thzjZaZe"
+   ]
+  },
+  {
+   "title": "Powerful pop-ups (4)",
+   "media": [
+    "1hBSlPRGvwbv63YgoKLTCW5Uyp0O5JGVL",
+    "1jOw4fMtU6ecpWB6AAI6SNgkRXsMBBsU5",
+    "1QAEzEZJ9_NpN_zsfF4_YAX8VPUC7AG4C",
+    "1C2Go2EQKX7nmRsbnnN3D_dfRefV4wE0f"
+   ]
+  }
+ ],
+ "open_slots": [
+  {
+   "date": "2026-11-27",
+   "idea": "Primera pieza LA 2028 (pendiente de diseño)"
+  }
  ]
 }
