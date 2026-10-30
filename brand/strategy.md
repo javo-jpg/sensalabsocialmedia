@@ -38,9 +38,7 @@ Posicionar a Sensa Lab como **el lab de tech experiencial con base en LA** al qu
 ## Métricas a revisar cada lunes en la junta
 Alcance, guardados y compartidos por post, DMs recibidos, visitas a la web desde las redes, seguidores de agencias en LinkedIn.
 
-## Pendientes para producir
-- Footage de Sala Marte y de los demos de Arcade y Mirror (Jon).
-- Diseño de los carruseles nuevos (Mirror, Playboard, LA 2028 #1 y #2) con el sistema visual de Audrey.
-- Corregir el título del slide 7 de "Top AI booths".
+## Producción sin footage
+Todo se genera desde el sistema visual de Audrey: `scripts/render_slides.py` (carruseles y tarjetas 1080x1350) y `scripts/render_reels.py` (reels 1080x1920, sin audio; el audio se elige de la librería nativa de IG al publicar). Pendiente: corregir el título del slide 7 de "Top AI booths".
 
 Fuentes: Socialinsider Instagram Benchmarks 2026; Socialinsider LinkedIn Engagement Benchmarks 2026; Adweek, "After World Cup, Brands Look to LA28"; BizBash, "Los Angeles Olympics: What Event Producers Need to Know".

@@ -9,8 +9,12 @@ def fmt(ds):
 def b64(path, box):
     im = Image.open(path); im.thumbnail(box); b = io.BytesIO(); im.convert("RGB").save(b, "JPEG", quality=72)
     return "data:image/jpeg;base64," + base64.b64encode(b.getvalue()).decode()
-def thumb(i): return b64(os.path.join(ROOT, "media", i + ".jpg"), (440, 780))
-def view(i): return f"https://drive.google.com/file/d/{i}/view"
+def thumb(i):
+    f = os.path.join(ROOT, "media", i.replace(".mp4", "-cover.png") if i.endswith(".mp4") else i + ".jpg")
+    return b64(f, (440, 780))
+def view(i):
+    if i.startswith("new/"): return "https://github.com/javo-jpg/sensalabsocialmedia/blob/main/media/" + (i if i.endswith(".mp4") else i + ".jpg")
+    return f"https://drive.google.com/file/d/{i}/view"
 esc = html.escape
 posts = sorted(d["posts"], key=lambda p: (p["date"], p["time"]))
 
@@ -29,7 +33,7 @@ open(os.path.join(ROOT, "calendar/2026-11.md"), "w").write("\n".join(md))
 STATUS = {"programado": "s-prog", "listo": "s-ok", "por producir": "s-todo"}
 cards = []
 for p in posts:
-    imgs = "".join(f'<a href="{view(m)}" target="_blank" rel="noopener"><img loading="lazy" src="{thumb(m)}" alt="{esc(p["title"])} {n+1}"></a>' for n, m in enumerate(p["media"]))
+    imgs = "".join(f'<a href="{view(m)}" target="_blank" rel="noopener" class="{"vid" if m.endswith(".mp4") else ""}"><img loading="lazy" src="{thumb(m)}" alt="{esc(p["title"])} {n+1}"></a>' for n, m in enumerate(p["media"]))
     st = "".join(f'<a href="{view(m)}" target="_blank" rel="noopener"><img loading="lazy" class="story" src="{thumb(m)}" alt="story"></a>' for m in p.get("story", []))
     nets = "".join(f'<span class="net">{esc(n)}</span>' for n in p["networks"])
     media = f'<div class="strip">{imgs}</div>' if imgs else f'<div class="brief"><b>Por producir.</b> {esc(p.get("brief",""))}</div>'
