@@ -29,10 +29,12 @@ body.dark .step{{background:rgba(255,255,255,.08)}}
 .big{{font-weight:800;font-size:260px;letter-spacing:-.06em;line-height:.9;color:#3b2bff}}body.dark .big{{color:#fff}}
 .src{{font-size:20px;opacity:.6;font-weight:500}}
 .cta{{display:inline-block;margin-top:44px;background:#3b2bff;color:#fff;border-radius:99px;padding:22px 40px;font-size:36px;font-weight:600}}
+.wm img{{height:34px;display:block}}.wm-w{{display:none!important}}body.dark .wm-w{{display:block!important}}body.dark .wm-d{{display:none!important}}
 .x{{color:#c2410c}}.ok{{color:#0f8a4b}}body.dark .ok{{color:#5eead4}}body.dark .x{{color:#fdba74}}
 """
+WM = f'<span class="wm"><img class="wm-d" src="file://{ROOT}/brand/logos/logo-horizontal-dark.png"><img class="wm-w" src="file://{ROOT}/brand/logos/logo-horizontal-white.png"></span>'
 def foot(n, total, dark=False):
-    return f'<div class="foot"><span>SensaLab</span><span class="pill">{n:02d} / {total:02d}</span><span class="pill">SENSALAB.IO</span></div>'
+    return f'<div class="foot">{WM}<span class="pill">{n:02d} / {total:02d}</span><span class="pill">SENSALAB.IO</span></div>'
 
 def steps(items):
     return '<div class="steps">' + "".join(f'<div class="step"><b>{i+1:02d}</b><div>{html.escape(t)}<small>{html.escape(s)}</small></div></div>' for i, (t, s) in enumerate(items)) + "</div>"
@@ -73,8 +75,53 @@ SETS["N8-la28-2"] = [
  ("dark", f'<div class="pad"><div class="kicker">The play</div><h2>Win on the experience, not the logo.</h2><p class="lead">The activations people remember are the ones they get to do something in. That works with or without a sponsorship.</p></div>{foot(4,5)}'),
  ("", f'<div class="pad" style="display:flex;flex-direction:column;justify-content:center"><div class="kicker">Sensa Lab · Los Angeles</div><h1>Planning a 2028 activation?</h1><p class="lead">We build the interactive layer. Save this and send it to your legal team.</p><span class="cta">DM “LA28”</span><p class="src" style="margin-top:40px">General information, not legal advice. Source: BizBash.</p></div>{foot(5,5)}'),
 ]
-SETS["N2-jon"] = [("dark", f'<div class="pad" style="display:flex;flex-direction:column;justify-content:center"><div class="kicker">Notes from the lab</div><h1 style="font-size:96px">The tech is never what fails.</h1><p class="lead">It’s the queue, the Wi-Fi, the staff, the screen nobody could see from the aisle.</p></div><div class="foot"><span>Jon · Sensa Lab</span><span class="pill">SENSALAB.IO</span></div>')]
-SETS["N6-javier"] = [("", f'<div class="pad" style="display:flex;flex-direction:column;justify-content:center"><div class="kicker">Activation ROI</div><h1 style="font-size:96px">If you can’t measure it, it was decoration.</h1><p class="lead">QR, opt-ins, dwell time, shares. Plan the data before you plan the build.</p></div><div class="foot"><span>Javier · Sensa Lab</span><span class="pill">SENSALAB.IO</span></div>')]
+SETS["N2-jon"] = [("dark", f'<div class="pad" style="display:flex;flex-direction:column;justify-content:center"><div class="kicker">Notes from the lab</div><h1 style="font-size:96px">The tech is never what fails.</h1><p class="lead">It’s the queue, the Wi-Fi, the staff, the screen nobody could see from the aisle.</p></div><div class="foot">{WM}<span class="pill">SENSALAB.IO</span></div>')]
+SETS["N6-javier"] = [("", f'<div class="pad" style="display:flex;flex-direction:column;justify-content:center"><div class="kicker">Activation ROI</div><h1 style="font-size:96px">If you can’t measure it, it was decoration.</h1><p class="lead">QR, opt-ins, dwell time, shares. Plan the data before you plan the build.</p></div><div class="foot">{WM}<span class="pill">SENSALAB.IO</span></div>')]
+
+def cover(kick, title, lead, img=None, pos="25%", dark=True, T=5):
+    card = f'<div class="card" style="height:540px;margin-top:56px;background-image:url({M(img)});background-position:center {pos}"></div>' if img else ""
+    return ("dark" if dark else "", f'<div class="pad"><div class="kicker">{kick}</div><h1>{title}</h1><p class="lead">{lead}</p>{card}</div>{foot(1,T)}')
+def stepslide(n, T, kick, title, items, dark=False, img=None, pos="20%"):
+    card = f'<div class="card" style="height:380px;margin-top:40px;background-image:url({M(img)});background-position:center {pos}"></div>' if img else ""
+    return ("dark" if dark else "", f'<div class="pad"><div class="kicker">{kick}</div><h2>{title}</h2>{card}{steps(items)}</div>{foot(n,T)}')
+def cta(n, T, kick, title, lead, word, dark=True):
+    return ("dark" if dark else "", f'<div class="pad" style="display:flex;flex-direction:column;justify-content:center"><div class="kicker">{kick}</div><h1>{title}</h1><p class="lead">{lead}</p><span class="cta">DM “{word}”</span></div>{foot(n,T)}')
+
+SETS["S1-what-we-build"] = [
+ cover("Sensa Lab · What we build", "Three experiences.<br>Ready for your next show.", "Plug-and-play interactive products for trade shows, launches and pop-ups. Plus custom builds when you need something nobody has seen.", "1X1YSGm8G7HswgTgo_4cZTw_rsWAU1tyW", T=6),
+ stepslide(2,6,"01 · Interactive Mirror","Step in.<br>Get restyled by AI.",[("A vertical screen and a camera","Fits any booth, no complex install."),("AI effects in real time","Cartoon, sci-fi, horror or your brand’s world."),("The photo goes home with them","QR to their phone, your logo on every shot.")]),
+ stepslide(3,6,"02 · Liquid Screen","Digital liquid that<br>follows your silhouette.",[("Walk past, the screen reacts","Real-time body tracking, zero buttons."),("Works on any vertical or LED screen","Bring the screen, we bring the effect."),("Stops people mid-aisle","The kind of thing they film and post.")]),
+ stepslide(4,6,"03 · Mini Games","Your booth,<br>turned into a game.",[("Camera-based, no controllers","Catch, dodge, race, with their whole body."),("Branded to you","Your products and colors are the game."),("Leaderboard + lead capture","30-second rounds, every round is a lead.")]),
+ stepslide(5,6,"Custom builds","Need something bigger?",[("Immersive rooms","Projection mapping and 3D content."),("Characters and AR","Real-time avatars and AR experiences."),("Tables, sensors and data","Interactive surfaces that report every touch.")],dark=True),
+ cta(6,6,"Sensa Lab","Which one fits your next show?","Tell us the event and we’ll send a demo of the experience that fits it.","DEMO"),
+]
+SETS["S2-how-we-work"] = [
+ cover("Sensa Lab · How we work","From brief to live<br>in about 3 weeks.","No black box. Here’s exactly what happens after you tell us about your event.", dark=False, T=4),
+ stepslide(2,4,"Weeks 0–1","Plan it.",[("Brief","Your goals, audience, venue and the KPI that matters."),("Concept","We design the experience and show you how it looks and plays."),("Sign-off","Scope, timeline and price locked in.")]),
+ stepslide(3,4,"Weeks 1–3","Build it. Run it. Measure it.",[("Build and test in our lab","Software, hardware and stress tests before it ships."),("Live on site","Setup, operation and a tech on the floor all day."),("Data report","Sessions, leads and shares, delivered after the event.")],dark=True),
+ cta(4,4,"Sensa Lab","Got an event coming up?","Send us the date and the goal. We’ll tell you what we’d build.","BRIEF"),
+]
+SETS["S3-for-agencies"] = [
+ cover("Sensa Lab · For agencies","Your creative.<br>Our tech.","We’re the technical team behind experiential agencies, working under your brand.", "10Ojfh6BTAqn9aS6XQcb4UajY8X9srxuR", T=5),
+ stepslide(2,5,"How white label works","Who does what.",[("You own the client and the idea","Strategy, creative direction, relationship."),("We engineer and build it","Software, hardware and integration, under your name."),("We run it on site","Our techs, your brand on the shirt.")]),
+ stepslide(3,5,"What you get","One partner for the whole tech layer.",[("Fixed timelines","Most builds ready in about 3 weeks."),("No surprises on the day","Everything is tested in our lab first."),("Data your client will love","A post-event report you can put your logo on.")],dark=True),
+ stepslide(4,5,"Where we work","Across the US.",[("Los Angeles","Home base."),("Miami, Texas, Oklahoma","And wherever your next event lands."),("Fast quotes","Send the brief, get a scope in days.")]),
+ cta(5,5,"Sensa Lab · White label","Pitching something interactive?","Bring us in before the pitch. We’ll help you scope it and price it.","PARTNER"),
+]
+SETS["S4-capabilities"] = [
+ cover("Sensa Lab · Capabilities","Everything we<br>can build.","Save this for the next time a client asks “can we do something interactive?”", "1dsaFdpVDQxg-bRl7Q49nmsfcWboc6JVh", T=5),
+ stepslide(2,5,"Interactive","Things people touch.",[("AI mirrors and photo booths","Real-time restyling, instant sharing."),("Interactive tables and walls","Touch, match, explore, compete."),("Camera and motion games","Full-body play, no controllers.")]),
+ stepslide(3,5,"Immersive","Spaces that react.",[("Projection mapping","Walls, objects and whole rooms."),("Anamorphic and 3D content","Screens that look like they pop out."),("Immersive rooms","Light, sound and motion working together.")],dark=True),
+ stepslide(4,5,"Characters, AI and data","The layer behind it.",[("Real-time avatars","Motion-captured hosts that talk back."),("AI content pipelines","Visuals generated live for every guest."),("Analytics","Every interaction measured and reported.")]),
+ cta(5,5,"Sensa Lab","Have an idea that sounds impossible?","That’s usually where we start.","IDEA"),
+]
+SETS["S5-la28-games"] = [
+ cover("Road to LA 2028 · 03","Mini games for<br>LA’s summer of 2028.","Built for fan zones, viewing parties and brand pop-ups.", "1dsaFdpVDQxg-bRl7Q49nmsfcWboc6JVh", T=5),
+ stepslide(2,5,"Game 01 · Sprint","Run in place.<br>Beat the record.",[("The camera tracks your speed","No treadmill, no wearables."),("Race a friend or the leaderboard","Head-to-head in 30 seconds."),("Your brand on the finish line","Sponsor moments built into the game.")]),
+ stepslide(3,5,"Game 02 · Archery","Draw. Aim. Release.",[("Your arm is the bow","Motion tracking reads the pull and release."),("Aim on a giant screen","Crowds gather to watch."),("Shareable score card","Every shot ends with a photo and a lead.")],dark=True),
+ stepslide(4,5,"Why it works","Made for crowds.",[("No controllers to clean or break","Just a camera and a screen."),("30-second rounds","High throughput, short lines."),("Branded and measurable","Logo, prizes and data in one experience.")]),
+ cta(5,5,"Sensa Lab · Los Angeles","Planning for 2028?","We’re building these now. Ask us for the game deck.","LA28"),
+]
 
 async def main(only=None):
     os.makedirs(f"{ROOT}/media/new", exist_ok=True)

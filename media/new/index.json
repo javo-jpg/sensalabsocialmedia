@@ -32,5 +32,40 @@
  ],
  "N6-javier": [
   "new/N6-javier-1"
+ ],
+ "S1-what-we-build": [
+  "new/S1-what-we-build-1",
+  "new/S1-what-we-build-2",
+  "new/S1-what-we-build-3",
+  "new/S1-what-we-build-4",
+  "new/S1-what-we-build-5",
+  "new/S1-what-we-build-6"
+ ],
+ "S2-how-we-work": [
+  "new/S2-how-we-work-1",
+  "new/S2-how-we-work-2",
+  "new/S2-how-we-work-3",
+  "new/S2-how-we-work-4"
+ ],
+ "S3-for-agencies": [
+  "new/S3-for-agencies-1",
+  "new/S3-for-agencies-2",
+  "new/S3-for-agencies-3",
+  "new/S3-for-agencies-4",
+  "new/S3-for-agencies-5"
+ ],
+ "S4-capabilities": [
+  "new/S4-capabilities-1",
+  "new/S4-capabilities-2",
+  "new/S4-capabilities-3",
+  "new/S4-capabilities-4",
+  "new/S4-capabilities-5"
+ ],
+ "S5-la28-games": [
+  "new/S5-la28-games-1",
+  "new/S5-la28-games-2",
+  "new/S5-la28-games-3",
+  "new/S5-la28-games-4",
+  "new/S5-la28-games-5"
  ]
 }
