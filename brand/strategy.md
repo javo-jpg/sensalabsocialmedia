@@ -31,7 +31,7 @@ Posicionar a Sensa Lab como **el lab de tech experiencial con base en LA** al qu
 - **Stories:** diarias, con encuestas/quiz los lunes; todo se archiva en highlights.
 
 ## Perfil
-- **Bio IG (propuesta):** "Creative tech lab · LA ↔ CDMX / AI mirrors, arcade games & interactive booths for brands + agencies / Book a demo ↓"
+- **Bio IG (propuesta):** "Creative tech lab · Los Angeles / AI mirrors, arcade games & interactive booths for brands + agencies / Book a demo ↓"
 - **Highlights:** LAB · MIRROR · ARCADE · PLAYBOARD · AGENCIES · LA 2028 · CONTACT (portadas en `media/highlights/`).
 - Fijar los 3 posts: relanzamiento, Sensa Mirror y White label.
 

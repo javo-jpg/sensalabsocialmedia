@@ -31,7 +31,7 @@ REELS = {
             (1.8, sc("Mirrors that restyle you.", "1X1YSGm8G7HswgTgo_4cZTw_rsWAU1tyW")),
             (1.8, sc("Games that sell for you.", "1uo7IBU4jwBAJKNdAOhZvF1NyTGWv00J2")),
             (1.8, sc("Avatars that wave back.", "1KZTBuZ5E3p2JoF0QJYCCr7oPTc05AbJk", "8%")),
-            (2.4, sc("Things people<br>actually touch.", sub="Interactive experiences for brands + agencies. LA ↔ CDMX.", light=True, mid=True))],
+            (2.4, sc("Things people<br>actually touch.", sub="Interactive experiences for brands + agencies. Los Angeles.", light=True, mid=True))],
  "N5-arcade": [(1.4, sc("Press start.", "1uo7IBU4jwBAJKNdAOhZvF1NyTGWv00J2", kicker="SENSA ARCADE")),
                (1.8, sc("Your brand, as a game.", "10Ojfh6BTAqn9aS6XQcb4UajY8X9srxuR")),
                (1.8, sc("Move. Tap. Play.", "1dsaFdpVDQxg-bRl7Q49nmsfcWboc6JVh")),

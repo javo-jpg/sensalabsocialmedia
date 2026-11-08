@@ -1,7 +1,9 @@
 # Voz Sensa Lab
 
 - Somos un **lab**, no un studio: curiosos, técnicos, con criterio. Fan page de tech, IA y experiencias interactivas.
-- Audiencia principal: agencias experienciales y marcas en EE. UU. (LA, Miami, NY) y México. Copies en inglés.
+- Audiencia principal: agencias experienciales y marcas en EE. UU. (LA, Miami, NY). Copies en inglés.
+- **Regla: nunca mencionar México, CDMX ni nada de México en contenido público.** La marca se presenta solo como Los Angeles / US.
+- **Logo: solo el símbolo plano y el wordmark oficiales (SensaLab_Logotipos). El S 3D de Drive es un borrador, no usar.**
 - Vendemos resultados ("que la gente se detenga, juegue y recuerde"), no ingredientes técnicos.
 - Productos a empujar: Sensa Mirror, Sensa Arcade, Sensa Playboard; white label para agencias.
 - Ángulo Q4–2027: LA 2028.
