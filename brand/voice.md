@@ -2,7 +2,7 @@
 
 - Somos un **lab**, no un studio: curiosos, técnicos, con criterio. Fan page de tech, IA y experiencias interactivas.
 - Audiencia principal: agencias experienciales y marcas en EE. UU. (LA, Miami, NY). Copies en inglés.
-- **Regla: nunca mencionar México, CDMX ni nada de México en contenido público.** La marca se presenta solo como Los Angeles / US.
+- **Regla: nunca mencionar México, CDMX ni nada de México en contenido público.** Ubicaciones que sí se pueden mencionar: Los Angeles, Miami, Oklahoma, Texas; en general, USA.
 - **Nunca mencionar marcas ni proyectos de clientes anteriores (Nissan, Coca-Cola, Warner Music, Gucci, etc.).**
 - **Todo el contenido en inglés.**
 - **Logo: solo el símbolo plano y el wordmark oficiales (SensaLab_Logotipos). El S 3D de Drive es un borrador, no usar.**
