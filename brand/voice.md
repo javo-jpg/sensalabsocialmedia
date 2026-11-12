@@ -16,3 +16,9 @@
 - Frases cortas, ejemplos concretos, alguna línea con humor seco.
 - Máx. 5 hashtags.
 - No usar el demo reel de Jon de su empresa anterior.
+
+## Reglas aprendidas del piloto
+- Cada pieza debe entenderse sin caption; nada de stories sin contexto.
+- Formato ganador: breakdowns con ejemplos reales y explicación (como "Top AI booths").
+- Jon aprueba cada pieza antes de programarla.
+- Ver `brand/lessons.md`.

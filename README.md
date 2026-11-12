@@ -1,5 +1,7 @@
 # Sensa Lab — Social Media
 
+> **Estado (12 nov 2026): sistema apagado.** Jon produce el contenido. Lee `brand/lessons.md` antes de reactivar cualquier automatización.
+
 Centro de operación de las redes de Sensa Lab (Instagram `@sensa.lab`, Facebook, LinkedIn) vía Metricool (brand id `7566765`).
 
 ## Estructura
